@@ -58,7 +58,7 @@
           themselves — either way, your voice stays yours.
         </p>
 
-        <form class="signup" onsubmit="event.preventDefault(); this.querySelector('button').textContent = (window.RecadlyI18n && window.RecadlyI18n.translations[window.RecadlyI18n.currentLang()]['hero.cta_done']) || 'You\u2019re on the list ✨'">
+        <form class="signup" data-waitlist-source="hero" data-success-key="hero.cta_done" data-success-fallback="You’re on the list ✨">
           <input type="email" placeholder="you@brand.studio" required data-i18n-placeholder="hero.placeholder" />
           <button type="submit" data-i18n="hero.cta">Join the waitlist</button>
         </form>
@@ -286,7 +286,7 @@
       <div class="cta-final">
         <h2 data-i18n="cta.title">Get your evenings back.</h2>
         <p data-i18n="cta.sub">Join the waitlist and we'll send your beta invite as soon as a spot opens. No spam, no drip campaigns.</p>
-        <form class="signup" onsubmit="event.preventDefault(); this.querySelector('button').textContent = (window.RecadlyI18n && window.RecadlyI18n.translations[window.RecadlyI18n.currentLang()]['cta.thanks']) || 'Thanks — see you soon ✨'">
+        <form class="signup" data-waitlist-source="footer" data-success-key="cta.thanks" data-success-fallback="Thanks — see you soon ✨">
           <input type="email" placeholder="you@brand.studio" required data-i18n-placeholder="hero.placeholder" />
           <button type="submit" data-i18n="hero.cta">Join the waitlist</button>
         </form>
@@ -452,5 +452,6 @@
     ReactDOM.createRoot(document.getElementById('hero-phone')).render(<HeroCarousel />);
     ReactDOM.createRoot(document.getElementById('spotlight-phone')).render(<SpotlightPhone />);
   </script>
+  <script src="waitlist.js"></script>
 </body>
 </html>

@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — Recadly</title>
-  <meta name="description" content="How Recadly collects, uses, and protects your data." />
+  <title data-i18n="privacy.metaTitle">Privacy Policy — Recadly</title>
+  <meta name="description" content="How Recadly collects, uses, and protects your data." data-i18n-content="privacy.metaDesc" />
   <link rel="icon" href="assets/recadly-icon.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="i18n.js"></script>
 </head>
 <body>
   <nav class="nav">
@@ -19,108 +20,111 @@
         <span class="brand-word">Recadly</span>
       </a>
       <div class="nav-links">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#how">How it works</a>
-        <a href="index.html#trust">Privacy</a>
-        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="index.html#how" data-i18n="nav.how">How it works</a>
+        <a href="index.html#trust" data-i18n="nav.privacy">Privacy</a>
+        <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
       </div>
-      <a href="index.html#cta" class="nav-cta">Join the waitlist</a>
+      <div class="nav-cta-group">
+        <div class="lang-picker"></div>
+        <a href="index.html#cta" class="nav-cta" data-i18n="nav.cta">Join the waitlist</a>
+      </div>
     </div>
   </nav>
 
   <article class="legal">
-    <h1>Privacy Policy</h1>
-    <div class="updated">Last updated · May 25, 2026</div>
+    <h1 data-i18n="privacy.h1">Privacy Policy</h1>
+    <div class="updated" data-i18n="privacy.updated">Last updated · May 25, 2026</div>
 
     <div class="legal-toc">
-      <h5>On this page</h5>
+      <h5 data-i18n="toc.title">On this page</h5>
       <ul>
-        <li><a href="#who">Who we are</a></li>
-        <li><a href="#covers">Who this policy covers</a></li>
-        <li><a href="#what">What data we process</a></li>
-        <li><a href="#how">How we use your data</a></li>
-        <li><a href="#basis">Legal basis</a></li>
-        <li><a href="#ai">AI processing</a></li>
-        <li><a href="#subprocessors">Sub-processors</a></li>
-        <li><a href="#storage">Where your data is stored</a></li>
-        <li><a href="#retention">Data retention</a></li>
-        <li><a href="#rights">Your rights</a></li>
-        <li><a href="#deletion">Data deletion</a></li>
-        <li><a href="#security">Security</a></li>
-        <li><a href="#children">Children</a></li>
-        <li><a href="#changes">Changes</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#who" data-i18n="privacy.toc.who">Who we are</a></li>
+        <li><a href="#covers" data-i18n="privacy.toc.covers">Who this policy covers</a></li>
+        <li><a href="#what" data-i18n="privacy.toc.what">What data we process</a></li>
+        <li><a href="#how" data-i18n="privacy.toc.how">How we use your data</a></li>
+        <li><a href="#basis" data-i18n="privacy.toc.basis">Legal basis</a></li>
+        <li><a href="#ai" data-i18n="privacy.toc.ai">AI processing</a></li>
+        <li><a href="#subprocessors" data-i18n="privacy.toc.sub">Sub-processors</a></li>
+        <li><a href="#storage" data-i18n="privacy.toc.storage">Where your data is stored</a></li>
+        <li><a href="#retention" data-i18n="privacy.toc.retention">Data retention</a></li>
+        <li><a href="#rights" data-i18n="privacy.toc.rights">Your rights</a></li>
+        <li><a href="#deletion" data-i18n="privacy.toc.deletion">Data deletion</a></li>
+        <li><a href="#security" data-i18n="privacy.toc.security">Security</a></li>
+        <li><a href="#children" data-i18n="privacy.toc.children">Children</a></li>
+        <li><a href="#changes" data-i18n="privacy.toc.changes">Changes</a></li>
+        <li><a href="#contact" data-i18n="privacy.toc.contact">Contact</a></li>
       </ul>
     </div>
 
-    <h2 id="who">1. Who we are</h2>
-    <p>Recadly ("Recadly", "we", "us") is an iOS application that helps brands and creators manage their Instagram direct messages with AI assistance. Recadly is operated by <strong>Helena Emilia Martínez Pérez</strong>, a self-employed business (autónoma) based in Barcelona, Spain. We are the data controller for the personal data described in this policy. For any privacy question, contact us at <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.</p>
+    <h2 id="who" data-i18n="privacy.h.who">1. Who we are</h2>
+    <p data-i18n-html="privacy.p.who">Recadly ("Recadly", "we", "us") is an iOS application that helps brands and creators manage their Instagram direct messages with AI assistance. Recadly is operated by <strong>Helena Emilia Martínez Pérez</strong>, a self-employed business (autónoma) based in Barcelona, Spain. We are the data controller for the personal data described in this policy. For any privacy question, contact us at <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.</p>
 
-    <h2 id="covers">2. Who this policy covers</h2>
-    <p>This policy covers two groups of people:</p>
+    <h2 id="covers" data-i18n="privacy.h.covers">2. Who this policy covers</h2>
+    <p data-i18n="privacy.p.covers">This policy covers two groups of people:</p>
     <ul>
-      <li><strong>Recadly users</strong> — the brands and creators who install Recadly and connect their Instagram professional account.</li>
-      <li><strong>Message senders</strong> — the Instagram users who send direct messages to a connected account. Their messages are processed by Recadly so that the Recadly user can read and reply to them.</li>
+      <li data-i18n-html="privacy.p.covers.users"><strong>Recadly users</strong> — the brands and creators who install Recadly and connect their Instagram professional account.</li>
+      <li data-i18n-html="privacy.p.covers.senders"><strong>Message senders</strong> — the Instagram users who send direct messages to a connected account. Their messages are processed by Recadly so that the Recadly user can read and reply to them.</li>
     </ul>
 
-    <h2 id="what">3. What data we process</h2>
-    <p>When you connect an Instagram professional account, and as you use Recadly, we process:</p>
+    <h2 id="what" data-i18n="privacy.h.what">3. What data we process</h2>
+    <p data-i18n="privacy.p.what.intro">When you connect an Instagram professional account, and as you use Recadly, we process:</p>
     <ul>
-      <li><strong>Instagram account information</strong> — the account's ID, username, and basic profile details provided by Instagram.</li>
-      <li><strong>Access tokens</strong> — a secure token issued by Instagram that lets Recadly act on the connected account's behalf.</li>
-      <li><strong>Direct message and comment content</strong> — the text and metadata of direct messages and post/reel comments sent to and from the connected account, including messages from the people who contact that account.</li>
-      <li><strong>Automation rules</strong> — keyword and topic routing rules the user creates.</li>
-      <li><strong>Drafted replies</strong> — AI-generated reply drafts awaiting the user's approval.</li>
+      <li data-i18n-html="privacy.p.what.account"><strong>Instagram account information</strong> — the account's ID, username, and basic profile details provided by Instagram.</li>
+      <li data-i18n-html="privacy.p.what.token"><strong>Access tokens</strong> — a secure token issued by Instagram that lets Recadly act on the connected account's behalf.</li>
+      <li data-i18n-html="privacy.p.what.dm"><strong>Direct message and comment content</strong> — the text and metadata of direct messages and post/reel comments sent to and from the connected account, including messages from the people who contact that account.</li>
+      <li data-i18n-html="privacy.p.what.rules"><strong>Automation rules</strong> — keyword and topic routing rules the user creates.</li>
+      <li data-i18n-html="privacy.p.what.drafts"><strong>Drafted replies</strong> — AI-generated reply drafts awaiting the user's approval.</li>
     </ul>
-    <p>We collect only the data needed to provide the service. We do not use it for advertising and we do not sell it.</p>
+    <p data-i18n="privacy.p.what.outro">We collect only the data needed to provide the service. We do not use it for advertising and we do not sell it.</p>
 
-    <h2 id="how">4. How we use your data</h2>
-    <p>We use this data solely to provide Recadly's features:</p>
+    <h2 id="how" data-i18n="privacy.h.how">4. How we use your data</h2>
+    <p data-i18n="privacy.p.how.intro">We use this data solely to provide Recadly's features:</p>
     <ul>
-      <li>Display the connected account's Instagram conversations in the app.</li>
-      <li>Generate suggested replies using AI (see Section 6).</li>
-      <li>Route incoming messages by keyword or topic according to the user's rules.</li>
-      <li>Send replies that the user has written or reviewed and approved.</li>
-    </ul>
-
-    <h2 id="basis">5. Legal basis (GDPR)</h2>
-    <p>We process this data to perform our contract with the Recadly user (providing the service) and on the basis of our legitimate interest in operating and securing it. Message processing is carried out on the instruction of the Recadly user and under Instagram's terms governing business messaging.</p>
-
-    <h2 id="ai">6. AI processing</h2>
-    <p>To generate reply suggestions and to route messages by topic, Recadly sends the relevant message content to Anthropic's Claude API. Anthropic processes this content to return the suggestions and, under its commercial API terms, does not use it to train its models.</p>
-
-    <h2 id="subprocessors">7. Sub-processors</h2>
-    <p>We rely on these providers to operate Recadly:</p>
-    <ul>
-      <li><strong>Anthropic</strong> — AI reply suggestions and message classification.</li>
-      <li><strong>Neon</strong> — database hosting (European Union — Frankfurt, Germany).</li>
-      <li><strong>Fly.io</strong> — application hosting (European Union — Frankfurt, Germany).</li>
-      <li><strong>Meta Platforms</strong> — Instagram, the source of the messaging data.</li>
+      <li data-i18n="privacy.p.how.display">Display the connected account's Instagram conversations in the app.</li>
+      <li data-i18n="privacy.p.how.ai">Generate suggested replies using AI (see Section 6).</li>
+      <li data-i18n="privacy.p.how.route">Route incoming messages by keyword or topic according to the user's rules.</li>
+      <li data-i18n="privacy.p.how.send">Send replies that the user has written or reviewed and approved.</li>
     </ul>
 
-    <h2 id="storage">8. Where your data is stored</h2>
-    <p>Recadly's database and servers are hosted within the European Union (Frankfurt, Germany).</p>
+    <h2 id="basis" data-i18n="privacy.h.basis">5. Legal basis (GDPR)</h2>
+    <p data-i18n="privacy.p.basis">We process this data to perform our contract with the Recadly user (providing the service) and on the basis of our legitimate interest in operating and securing it. Message processing is carried out on the instruction of the Recadly user and under Instagram's terms governing business messaging.</p>
 
-    <h2 id="retention">9. Data retention</h2>
-    <p>We retain your data for as long as your Instagram account remains connected to Recadly. When you disconnect the account or request deletion, we delete the stored data — see Section 11 and our <a href="data-deletion.html">Data Deletion</a> page.</p>
+    <h2 id="ai" data-i18n="privacy.h.ai">6. AI processing</h2>
+    <p data-i18n="privacy.p.ai">To generate reply suggestions and to route messages by topic, Recadly sends the relevant message content to Anthropic's Claude API. Anthropic processes this content to return the suggestions and, under its commercial API terms, does not use it to train its models.</p>
 
-    <h2 id="rights">10. Your rights</h2>
-    <p>Under the GDPR you have the right to access, correct, export, and delete your personal data, and to object to or restrict its processing. To exercise these rights, contact <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>. You may also lodge a complaint with the Spanish Data Protection Agency (AEPD).</p>
+    <h2 id="subprocessors" data-i18n="privacy.h.sub">7. Sub-processors</h2>
+    <p data-i18n="privacy.p.sub.intro">We rely on these providers to operate Recadly:</p>
+    <ul>
+      <li data-i18n-html="privacy.p.sub.anthropic"><strong>Anthropic</strong> — AI reply suggestions and message classification.</li>
+      <li data-i18n-html="privacy.p.sub.neon"><strong>Neon</strong> — database hosting (European Union — Frankfurt, Germany).</li>
+      <li data-i18n-html="privacy.p.sub.fly"><strong>Fly.io</strong> — application hosting (European Union — Frankfurt, Germany).</li>
+      <li data-i18n-html="privacy.p.sub.meta"><strong>Meta Platforms</strong> — Instagram, the source of the messaging data.</li>
+    </ul>
 
-    <h2 id="deletion">11. Data deletion</h2>
-    <p>You can disconnect your Instagram account in Recadly at any time, which revokes Recadly's access and deletes the stored access token. To request full deletion of all stored data, see <a href="data-deletion.html">recadly.com/data-deletion</a> or email <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.</p>
+    <h2 id="storage" data-i18n="privacy.h.storage">8. Where your data is stored</h2>
+    <p data-i18n="privacy.p.storage">Recadly's database and servers are hosted within the European Union (Frankfurt, Germany).</p>
 
-    <h2 id="security">12. Security</h2>
-    <p>Access tokens and message data are stored in our EU-hosted database with restricted access. Access to backend systems is limited to authorised operators.</p>
+    <h2 id="retention" data-i18n="privacy.h.retention">9. Data retention</h2>
+    <p data-i18n-html="privacy.p.retention">We retain your data for as long as your Instagram account remains connected to Recadly. When you disconnect the account or request deletion, we delete the stored data — see Section 11 and our <a href="data-deletion.html">Data Deletion</a> page.</p>
 
-    <h2 id="children">13. Children</h2>
-    <p>Recadly is intended for use by businesses and creators and is not directed to anyone under 18 years of age.</p>
+    <h2 id="rights" data-i18n="privacy.h.rights">10. Your rights</h2>
+    <p data-i18n-html="privacy.p.rights">Under the GDPR you have the right to access, correct, export, and delete your personal data, and to object to or restrict its processing. To exercise these rights, contact <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>. You may also lodge a complaint with the Spanish Data Protection Agency (AEPD).</p>
 
-    <h2 id="changes">14. Changes to this policy</h2>
-    <p>We may update this policy from time to time. The current version is always posted here, with the "last updated" date above.</p>
+    <h2 id="deletion" data-i18n="privacy.h.deletion">11. Data deletion</h2>
+    <p data-i18n-html="privacy.p.deletion">You can disconnect your Instagram account in Recadly at any time, which revokes Recadly's access and deletes the stored access token. To request full deletion of all stored data, see <a href="data-deletion.html">recadly.com/data-deletion</a> or email <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.</p>
 
-    <h2 id="contact">15. Contact</h2>
-    <p>Helena Emilia Martínez Pérez — <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>, Barcelona, Spain.</p>
+    <h2 id="security" data-i18n="privacy.h.security">12. Security</h2>
+    <p data-i18n="privacy.p.security">Access tokens and message data are stored in our EU-hosted database with restricted access. Access to backend systems is limited to authorised operators.</p>
+
+    <h2 id="children" data-i18n="privacy.h.children">13. Children</h2>
+    <p data-i18n="privacy.p.children">Recadly is intended for use by businesses and creators and is not directed to anyone under 18 years of age.</p>
+
+    <h2 id="changes" data-i18n="privacy.h.changes">14. Changes to this policy</h2>
+    <p data-i18n="privacy.p.changes">We may update this policy from time to time. The current version is always posted here, with the "last updated" date above.</p>
+
+    <h2 id="contact" data-i18n="privacy.h.contact">15. Contact</h2>
+    <p data-i18n-html="privacy.p.contact">Helena Emilia Martínez Pérez — <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>, Barcelona, Spain.</p>
   </article>
 
   <footer>
@@ -131,26 +135,26 @@
             <img src="assets/recadly-icon.jpg" alt="Recadly" class="brand-mark" style="object-fit: cover" />
             <span class="brand-word">Recadly</span>
           </a>
-          A calmer way to handle the messages your customers leave you.
+          <span data-i18n="footer.tagline">A calmer way to handle the messages your customers leave you.</span>
         </div>
         <div class="footer-col">
-          <h5>Product</h5>
+          <h5 data-i18n="footer.product">Product</h5>
           <ul>
-            <li><a href="index.html#features">Features</a></li>
-            <li><a href="index.html#how">How it works</a></li>
-            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="index.html#how" data-i18n="nav.how">How it works</a></li>
+            <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>Legal</h5>
+          <h5 data-i18n="footer.legal">Legal</h5>
           <ul>
-            <li><a href="privacy.html">Privacy policy</a></li>
-            <li><a href="terms.html">Terms of service</a></li>
-            <li><a href="data-deletion.html">Data deletion</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Terms of service</a></li>
+            <li><a href="data-deletion.html" data-i18n="footer.dpa">Data deletion</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>Contact</h5>
+          <h5 data-i18n="footer.contact">Contact</h5>
           <ul>
             <li><a href="mailto:hello@recadly.com">hello@recadly.com</a></li>
             <li><a href="mailto:privacy@recadly.com">privacy@recadly.com</a></li>
@@ -158,8 +162,8 @@
         </div>
       </div>
       <div class="footer-base">
-        <span>© 2026 Recadly. All rights reserved.</span>
-        <span><a href="privacy.html">Privacy</a>  ·  <a href="terms.html">Terms</a></span>
+        <span data-i18n="footer.copy">© 2026 Recadly. All rights reserved.</span>
+        <span><a href="privacy.html" data-i18n="footer.privacy_short">Privacy</a>  ·  <a href="terms.html" data-i18n="footer.terms_short">Terms</a></span>
       </div>
     </div>
   </footer>
