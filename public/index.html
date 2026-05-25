@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recadly — never leave a customer on read again</title>
+  <meta name="description" content="Recadly reads your Instagram DMs and quietly drafts replies in your voice. Approve each one yourself, or let trusted topics handle themselves." />
+
+  <link rel="icon" href="assets/recadly-icon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <!-- Localization — load BEFORE the screen components so window.tr() is
+       available when React renders. i18n.js handles the landing page and
+       picker UI; i18n-screens.js merges screen-component translations in. -->
+  <script src="i18n.js"></script>
+  <script src="i18n-screens.js"></script>
+</head>
+<body>
+  <!-- ── Top nav ──────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/recadly-icon.jpg" alt="Recadly" class="brand-mark" style="object-fit: cover" />
+        <span class="brand-word">Recadly</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#trust" data-i18n="nav.privacy">Privacy</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </div>
+      <div class="nav-end">
+        <div class="lang-picker"></div>
+        <a href="#cta" class="nav-cta" data-i18n="nav.cta">Join the waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l1.6 4.6a3 3 0 002 2L20 11l-4.4 1.4a3 3 0 00-2 2L12 19l-1.6-4.6a3 3 0 00-2-2L4 11l4.4-1.4a3 3 0 002-2z"/></svg>
+          <span data-i18n="hero.eyebrow">Now in private beta</span>
+        </span>
+        <h1 class="h1" data-i18n-html="hero.h1">Never leave a customer <em>on read</em> again.</h1>
+        <p class="lede" data-i18n="hero.lede">
+          Recadly reads your Instagram DMs and quietly drafts replies in your
+          voice. Approve each one yourself, or let trusted topics handle
+          themselves — either way, your voice stays yours.
+        </p>
+
+        <form class="signup" onsubmit="event.preventDefault(); this.querySelector('button').textContent = (window.RecadlyI18n && window.RecadlyI18n.translations[window.RecadlyI18n.currentLang()]['hero.cta_done']) || 'You\u2019re on the list ✨'">
+          <input type="email" placeholder="you@brand.studio" required data-i18n-placeholder="hero.placeholder" />
+          <button type="submit" data-i18n="hero.cta">Join the waitlist</button>
+        </form>
+        <div class="signup-meta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span data-i18n="hero.meta">Official Meta API · disconnect anytime</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <!-- floating decorative bubbles -->
+        <div class="hero-bubble in" style="top: 8%; left: 2%;" data-i18n="bubble.in">Are you open today? 🥺</div>
+        <div class="hero-bubble out" style="bottom: 12%; right: 4%;" data-i18n="bubble.out">Yes — until 8pm 🧡</div>
+        <div id="hero-phone" class="hero-phone-stage"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features ─────────────────────────────────────────── -->
+  <section id="features" class="section section-tinted">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="features.eyebrow">What Recadly does</div>
+        <h2 class="section-title" data-i18n="features.title">Three quiet helpers, one calmer inbox.</h2>
+        <p class="section-sub" data-i18n="features.sub">Each feature stays out of the way until you need it. Nothing sends without your tap.</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l1.6 4.6a3 3 0 002 2L20 11l-4.4 1.4a3 3 0 00-2 2L12 19l-1.6-4.6a3 3 0 00-2-2L4 11l4.4-1.4a3 3 0 002-2z"/></svg>
+          </div>
+          <h3 data-i18n="feature1.title">Suggested replies</h3>
+          <p data-i18n="feature1.body">Above the compose bar, you see two or three drafts Recadly thinks fit. Tap one to drop it into the field — edit, then send.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.7 7.7l3 8.3M16.3 7.7l-3 8.3"/></svg>
+          </div>
+          <h3 data-i18n="feature2.title">Topic routing</h3>
+          <p data-i18n="feature2.body">Set up rules for sizing, shipping, returns, press — Recadly tags, drafts the right reply, or forwards to the right teammate.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/><path d="M9 11h6M9 8h6"/></svg>
+          </div>
+          <h3 data-i18n="feature3.title">Approval inbox</h3>
+          <p data-i18n="feature3.body">Every AI draft lives in one place. Approve, edit, or skip in a single thumb-swipe. Your voice always stays yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Spotlight: thread close-up ───────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 28px">
+        <div class="section-eyebrow" data-i18n="spotlight.eyebrow">The thread</div>
+        <h2 class="section-title" data-i18n-html="spotlight.title">A messaging app you already know,<br/>with a calmer co-pilot.</h2>
+      </div>
+
+      <div class="spotlight-grid">
+        <div id="spotlight-phone" class="spotlight-phone"></div>
+        <div class="spotlight-points">
+          <div class="spotlight-point">
+            <div class="spotlight-point-num">1</div>
+            <div>
+              <h4 data-i18n="point1.title">Recadly notices the question</h4>
+              <p data-i18n="point1.body">A small coral hint surfaces under the customer's last message — "noticed a question about shipping & returns". No takeover, no chatbot voice.</p>
+            </div>
+          </div>
+          <div class="spotlight-point">
+            <div class="spotlight-point-num">2</div>
+            <div>
+              <h4 data-i18n="point2.title">Three drafts wait above your compose</h4>
+              <p data-i18n="point2.body">Tappable replies — short, warm, in your tone. The first one is usually right. The others give you variations.</p>
+            </div>
+          </div>
+          <div class="spotlight-point">
+            <div class="spotlight-point-num">3</div>
+            <div>
+              <h4 data-i18n="point3.title">Tap → edit → send</h4>
+              <p data-i18n="point3.body">One tap drops the draft into the field. Edit a single word, change the emoji, send when you mean it. Nothing goes out behind your back.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How it works ─────────────────────────────────────── -->
+  <section id="how" class="section section-tinted">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="how.eyebrow">How it works</div>
+        <h2 class="section-title" data-i18n-html="how.title">Three minutes to set up.<br/>Hours back every week.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num" data-i18n="step1.kicker">STEP 01</div>
+          <h3 data-i18n="step1.title">Connect Instagram</h3>
+          <p data-i18n="step1.body">Through Meta's official API. We never touch your password, and you can disconnect any time from settings.</p>
+        </div>
+        <div class="step">
+          <div class="step-num" data-i18n="step2.kicker">STEP 02</div>
+          <h3 data-i18n="step2.title">Teach it your voice</h3>
+          <p data-i18n="step2.body">Recadly studies your last 50 sent replies to pick up your tone — your emoji habits, your warmth, your humor.</p>
+        </div>
+        <div class="step">
+          <div class="step-num" data-i18n="step3.kicker">STEP 03</div>
+          <h3 data-i18n="step3.title">Approve, send, repeat</h3>
+          <p data-i18n="step3.body">Open a thread, tap the draft you like, send. Or batch through the approval inbox during your morning coffee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Origin block ─────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="origin">
+        <div class="origin-mark" data-i18n="origin.mark">Why "Recadly"</div>
+        <blockquote data-i18n-html="origin.quote">
+          In Portuguese, <em>"deixar um recado"</em> means to leave a message
+          for someone — warm, personal, the kind of thing a friend would do.
+          Your customers deserve that kind of reply.
+        </blockquote>
+        <div class="origin-foot" data-i18n="origin.foot">re·ca·do · /ʁɨˈkadu/ · n. a message left with care</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust ────────────────────────────────────────────── -->
+  <section id="trust" class="section section-tinted">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="trust.eyebrow">Privacy by default</div>
+        <h2 class="section-title" data-i18n="trust.title">Your customers' messages are not training data.</h2>
+        <p class="section-sub" data-i18n="trust.sub">Recadly only reads what it needs to draft a reply. We don't sell anything, fine-tune anything, or share anything.</p>
+      </div>
+
+      <div class="trust">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h4 data-i18n="trust1.title">Encrypted in transit and at rest</h4>
+            <p data-i18n="trust1.body">TLS 1.3 between your phone and our servers. AES-256 on disk. The same protocols your bank uses.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <div>
+            <h4 data-i18n="trust2.title">You own your messages</h4>
+            <p data-i18n="trust2.body">Export everything as JSON, any time. Delete your account and we wipe it inside 30 days — no follow-up emails.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+          </div>
+          <div>
+            <h4 data-i18n="trust3.title">Drafts expire</h4>
+            <p data-i18n="trust3.body">Unsent AI drafts disappear after 7 days. No archive sitting in a database with your customers' problems in it.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M12 4v16"/></svg>
+          </div>
+          <div>
+            <h4 data-i18n="trust4.title">Disconnect in one tap</h4>
+            <p data-i18n="trust4.body">Revoke access from your settings. Recadly stops reading, drafting, and storing anything new — immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ──────────────────────────────────────────────── -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="faq.eyebrow">Honest answers</div>
+        <h2 class="section-title" data-i18n="faq.title">Things people ask before signing up.</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary data-i18n="faq1.q">Does Recadly send messages on its own?</summary>
+          <div class="faq-body" data-i18n="faq1.a">That's up to you. By default Recadly only drafts — every message waits for your tap before going out. For specific topics (out-of-hours holding replies, an FAQ you're tired of typing) you can switch a rule to auto-send. Each rule is its own toggle, and you can flip back to manual any time.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq2.q">Will customers know they're talking to AI?</summary>
+          <div class="faq-body" data-i18n="faq2.a">They're not talking to AI — they're talking to you. Recadly suggests; you write. Most customers wouldn't tell the difference between a Recadly-assisted reply and one you wrote from scratch, because in the end, you did write it.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq3.q">What does Recadly read?</summary>
+          <div class="faq-body" data-i18n="faq3.a">Only the DMs in the threads you choose. Recadly never reads your feed, your stories, your posts, your followers, or any other part of your account — just messages, nothing else.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq4.q">How much does it cost?</summary>
+          <div class="faq-body" data-i18n="faq4.a">During private beta, free for brands with fewer than 50,000 followers. After GA, we'll publish a clear per-seat price — no hidden message volume tiers, no surprise overage charges.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq5.q">Can my team share an inbox?</summary>
+          <div class="faq-body" data-i18n="faq5.a">Yes. Add teammates by email — each person gets their own login, their own draft history, and you can route topics to specific teammates with rules.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq6.q">What about Android?</summary>
+          <div class="faq-body" data-i18n="faq6.a">iOS first, Android later this year. Add yourself to the waitlist and pick "Android" and we'll email when the beta opens.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Final CTA ────────────────────────────────────────── -->
+  <section id="cta" class="section">
+    <div class="container">
+      <div class="cta-final">
+        <h2 data-i18n="cta.title">Get your evenings back.</h2>
+        <p data-i18n="cta.sub">Join the waitlist and we'll send your beta invite as soon as a spot opens. No spam, no drip campaigns.</p>
+        <form class="signup" onsubmit="event.preventDefault(); this.querySelector('button').textContent = (window.RecadlyI18n && window.RecadlyI18n.translations[window.RecadlyI18n.currentLang()]['cta.thanks']) || 'Thanks — see you soon ✨'">
+          <input type="email" placeholder="you@brand.studio" required data-i18n-placeholder="hero.placeholder" />
+          <button type="submit" data-i18n="hero.cta">Join the waitlist</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="assets/recadly-icon.jpg" alt="Recadly" class="brand-mark" style="object-fit: cover" />
+            <span class="brand-word">Recadly</span>
+          </a>
+          <span data-i18n-html="footer.tagline">A calmer way to handle the messages your customers leave you. Made
+          in Barcelona — with <em class="saudade">saudade</em> for the beaches of Floripa.</span>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.product">Product</h5>
+          <ul>
+            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="#cta" data-i18n="nav.cta">Join the waitlist</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.legal">Legal</h5>
+          <ul>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Terms of service</a></li>
+            <li><a href="data-deletion.html" data-i18n="footer.dpa">Data deletion</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@recadly.com">hello@recadly.com</a></li>
+            <li><a href="mailto:privacy@recadly.com">privacy@recadly.com</a></li>
+            <li><a href="mailto:press@recadly.com">press@recadly.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span data-i18n="footer.copy">© 2026 Recadly. All rights reserved.</span>
+        <span><a href="privacy.html" data-i18n="footer.privacy_short">Privacy</a>  ·  <a href="terms.html" data-i18n="footer.terms_short">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Recadly app components — used to render the phone mocks. -->
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="theme.jsx"></script>
+  <script type="text/babel" src="screens/thread.jsx"></script>
+  <script type="text/babel" src="screens/inbox.jsx"></script>
+  <script type="text/babel" src="screens/approval.jsx"></script>
+
+  <script type="text/babel">
+    // ─── Hero carousel ──────────────────────────────────────
+    // Auto-rotating phone in the hero. Cycles through three screens so
+    // visitors see the breadth of the product without scrolling:
+    //   1. Conversation thread (the core moment)
+    //   2. Unified inbox — DMs + post/reel comments, switched at the top
+    //   3. Approval queue
+    // Crossfades, pauses on hover, jump-on-dot. The label below the dots
+    // names the current screen so the carousel teaches as it rotates.
+    function HeroCarousel() {
+      const lang = (window.useLang ? window.useLang() : 'en');
+      const t_ = (k, fb) => (window.tr ? window.tr(k, fb) : fb);
+
+      const slides = [
+        { id: 'thread',    label: t_('carousel.thread',    'The conversation'),
+          render: () => <ConversationThread theme="light" /> },
+        { id: 'inbox',     label: t_('carousel.inbox',     'DMs + post comments, in one place'),
+          render: () => <ConversationList  theme="light" source="all" /> },
+        { id: 'approvals', label: t_('carousel.approvals', 'Approve replies in seconds'),
+          render: () => <ApprovalInbox     theme="light" /> },
+      ];
+
+      const [idx, setIdx] = React.useState(0);
+      const [paused, setPaused] = React.useState(false);
+
+      React.useEffect(() => {
+        if (paused) return;
+        const id = setTimeout(() => setIdx(i => (i + 1) % slides.length), 5200);
+        return () => clearTimeout(id);
+      }, [idx, paused, lang]);
+
+      return (
+        <div
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          style={{
+            position: 'relative', width: '100%', height: '100%',
+            display: 'flex', flexDirection: 'column', alignItems: 'center',
+          }}
+        >
+          {/* Stacked phones — only the active one is visible; the rest are
+              alpha-zero so the iframe stays the same size and React keeps
+              their state between rotations. Explicit 402x874 matches the
+              Phone component's intrinsic size and gives the absolutely-
+              positioned slides a sizing context. */}
+          <div style={{ position: 'relative', width: 402, height: 874 }}>
+            {slides.map((s, i) => (
+              <div key={s.id} style={{
+                position: 'absolute', inset: 0,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                opacity: i === idx ? 1 : 0,
+                transform: i === idx ? 'scale(1)' : 'scale(0.97)',
+                transition: 'opacity 0.55s ease, transform 0.55s ease',
+                pointerEvents: i === idx ? 'auto' : 'none',
+              }}>
+                <Phone theme="light">{s.render()}</Phone>
+              </div>
+            ))}
+          </div>
+
+          {/* Dots + current-slide label. Sits under the phone, in the
+              normal page flow — doesn't overlap the device. */}
+          <div style={{
+            marginTop: 14, display: 'flex', flexDirection: 'column',
+            alignItems: 'center', gap: 8,
+          }}>
+            <div style={{
+              display: 'flex', gap: 8, alignItems: 'center',
+            }}>
+              {slides.map((s, i) => (
+                <button key={s.id}
+                  onClick={() => setIdx(i)}
+                  aria-label={s.label}
+                  style={{
+                    width: i === idx ? 24 : 8, height: 8,
+                    borderRadius: 4, border: 'none', cursor: 'pointer',
+                    background: i === idx ? 'var(--coral, #E55B50)' : 'rgba(41,38,27,0.18)',
+                    transition: 'width 0.3s ease, background 0.3s ease',
+                    padding: 0,
+                  }} />
+              ))}
+            </div>
+            <div style={{
+              fontSize: 13, fontWeight: 600, letterSpacing: -0.1,
+              color: 'rgba(41,38,27,0.62)', minHeight: 18,
+              fontFamily: 'Nunito, sans-serif',
+              textAlign: 'center',
+            }} key={lang + '-' + idx /* re-mount triggers fade-in */}>
+              <span style={{ animation: 'heroLabelIn 0.4s ease both' }}>{slides[idx].label}</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    function SpotlightPhone() {
+      return (
+        <Phone theme="light">
+          <ConversationThread theme="light" draft={true} focused suggestionsHidden />
+        </Phone>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('hero-phone')).render(<HeroCarousel />);
+    ReactDOM.createRoot(document.getElementById('spotlight-phone')).render(<SpotlightPhone />);
+  </script>
+</body>
+</html>
