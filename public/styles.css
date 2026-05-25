@@ -255,12 +255,13 @@ img { display: block; max-width: 100%; }
   .hero-art { min-height: 680px; }
   .hero-phone-stage { transform: scale(0.7); }
 }
-@media (max-width: 520px) {
-  .hero-art { min-height: 560px; }
-  .hero-phone-stage { transform: scale(0.58); }
-  .hero-bubble { font-size: 13px; padding: 8px 12px; }
-  .hero-bubble.in { top: 4% !important; left: 0% !important; }
-  .hero-bubble.out { bottom: 8% !important; right: 0% !important; }
+@media (max-width: 620px) {
+  /* Phone bezel is decorative — at this width it crowds the signup CTA
+     and overflows horizontally regardless of scale (native 402px child
+     in a < 360px viewport). Drop it on phones; the copy + signup
+     carry the page. */
+  .hero-art, .hero-bubble { display: none; }
+  .hero { padding-bottom: 32px; }
 }
 
 /* Carousel-label fade animation */
@@ -348,8 +349,10 @@ img { display: block; max-width: 100%; }
   .spotlight-grid { grid-template-columns: 1fr; gap: 32px; }
   .spotlight-phone { margin: 0; }
 }
-@media (max-width: 520px) {
-  .spotlight-phone { transform: scale(0.62); }
+@media (max-width: 620px) {
+  /* Same reason as the hero phone — fixed-pixel mock overflows narrow
+     viewports. The spotlight points read fine on their own. */
+  .spotlight-phone { display: none; }
 }
 
 /* ── How it works ───────────────────────────────────────── */
