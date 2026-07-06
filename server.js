@@ -17,6 +17,19 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
+// Security headers (static values — no need for helmet).
+app.disable('x-powered-by');
+app.use((req, res, next) => {
+  res.set('X-Content-Type-Options', 'nosniff');
+  res.set('X-Frame-Options', 'DENY');
+  res.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+  // Only advertise HSTS when the proxy in front of us terminated TLS.
+  if (req.get('x-forwarded-proto') === 'https') {
+    res.set('Strict-Transport-Security', 'max-age=15552000');
+  }
+  next();
+});
+
 // Serve everything in /public. `extensions: ['html']` gives clean URLs:
 //   /privacy        -> public/privacy.html
 //   /terms          -> public/terms.html
@@ -38,9 +51,9 @@ app.get('/', (_req, res) => {
   res.sendFile(path.join(PUBLIC_DIR, 'index.html'));
 });
 
-// Anything unmatched falls back to the landing page.
+// Anything unmatched gets a real 404 page.
 app.use((_req, res) => {
-  res.status(404).sendFile(path.join(PUBLIC_DIR, 'index.html'));
+  res.status(404).sendFile(path.join(PUBLIC_DIR, '404.html'));
 });
 
 app.listen(PORT, () => {

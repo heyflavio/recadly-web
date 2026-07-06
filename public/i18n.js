@@ -5,6 +5,7 @@
      <element data-i18n-html="key">…</element>     → swaps innerHTML (allows <em>, <br/>)
      <input  data-i18n-placeholder="key" />        → swaps placeholder
      <element data-i18n-aria="key" />              → swaps aria-label
+     <meta   data-i18n-content="key" />            → swaps content
    The picker (.lang-picker) reads/writes lang from localStorage.recadly-lang. */
 
 (function () {
@@ -126,7 +127,7 @@
         'Yes. Add teammates by email — each person gets their own login, their own draft history, and you can route topics to specific teammates with rules.',
       'faq6.q': 'What about Android?',
       'faq6.a':
-        'iOS first, Android later this year. Add yourself to the waitlist and pick "Android" and we\u2019ll email when the beta opens.',
+        'iOS first, Android later this year. Add yourself to the waitlist and we\u2019ll email you when the Android beta opens.',
 
       'cta.title': 'Get your evenings back.',
       'cta.sub':
@@ -193,10 +194,10 @@
       'privacy.p.sub.intro': 'We rely on these providers to operate Recadly:',
       'privacy.p.sub.anthropic': '<strong>Anthropic</strong> — AI reply suggestions and message classification.',
       'privacy.p.sub.neon': '<strong>Neon</strong> — database hosting (European Union — Frankfurt, Germany).',
-      'privacy.p.sub.fly': '<strong>Fly.io</strong> — application hosting (European Union — Frankfurt, Germany).',
+      'privacy.p.sub.fly': '<strong>Fly.io</strong> — application hosting (European Union — Frankfurt, Germany), when the application is deployed there.',
       'privacy.p.sub.meta': '<strong>Meta Platforms</strong> — Instagram, the source of the messaging data.',
       'privacy.h.storage': '8. Where your data is stored',
-      'privacy.p.storage': 'Recadly\'s database and servers are hosted within the European Union (Frankfurt, Germany).',
+      'privacy.p.storage': 'Recadly\'s database is hosted within the European Union (Frankfurt, Germany), and its application runs on EU-based infrastructure operated by the data controller or, when deployed there, on Fly.io (Frankfurt, Germany).',
       'privacy.h.retention': '9. Data retention',
       'privacy.p.retention': 'We retain your data for as long as your Instagram account remains connected to Recadly. When you disconnect the account or request deletion, we delete the stored data — see Section 11 and our <a href="data-deletion.html">Data Deletion</a> page.',
       'privacy.h.rights': '10. Your rights',
@@ -389,7 +390,7 @@
         'Sí. Añade a tu equipo por correo — cada persona tiene su propio acceso, su propio historial de borradores y puedes enviar temas a personas concretas con reglas.',
       'faq6.q': '¿Y Android?',
       'faq6.a':
-        'Primero iOS, Android más adelante este año. Apúntate a la lista marcando "Android" y te avisaremos cuando se abra el beta.',
+        'Primero iOS, Android más adelante este año. Apúntate a la lista y te avisaremos cuando se abra el beta de Android.',
 
       'cta.title': 'Recupera tus tardes.',
       'cta.sub':
@@ -456,10 +457,10 @@
       'privacy.p.sub.intro': 'Nos apoyamos en estos proveedores para operar Recadly:',
       'privacy.p.sub.anthropic': '<strong>Anthropic</strong> — sugerencias de respuesta con IA y clasificación de mensajes.',
       'privacy.p.sub.neon': '<strong>Neon</strong> — alojamiento de la base de datos (Unión Europea — Fráncfort, Alemania).',
-      'privacy.p.sub.fly': '<strong>Fly.io</strong> — alojamiento de la aplicación (Unión Europea — Fráncfort, Alemania).',
+      'privacy.p.sub.fly': '<strong>Fly.io</strong> — alojamiento de la aplicación (Unión Europea — Fráncfort, Alemania), cuando la aplicación está desplegada allí.',
       'privacy.p.sub.meta': '<strong>Meta Platforms</strong> — Instagram, la fuente de los datos de mensajería.',
       'privacy.h.storage': '8. Dónde se almacenan tus datos',
-      'privacy.p.storage': 'La base de datos y los servidores de Recadly están alojados en la Unión Europea (Fráncfort, Alemania).',
+      'privacy.p.storage': 'La base de datos de Recadly está alojada en la Unión Europea (Fráncfort, Alemania), y la aplicación se ejecuta en infraestructura de la UE operada por el responsable del tratamiento o, cuando está desplegada allí, en Fly.io (Fráncfort, Alemania).',
       'privacy.h.retention': '9. Conservación de datos',
       'privacy.p.retention': 'Conservamos tus datos mientras tu cuenta de Instagram permanezca conectada a Recadly. Cuando desconectes la cuenta o solicites la eliminación, borramos los datos almacenados — consulta la sección 11 y nuestra página de <a href="data-deletion.html">Eliminación de datos</a>.',
       'privacy.h.rights': '10. Tus derechos',
@@ -652,7 +653,7 @@
         'Sim. Adicione colegas pelo e-mail — cada um tem o próprio login, o próprio histórico de rascunhos, e dá pra encaminhar tópicos para pessoas específicas com regras.',
       'faq6.q': 'E o Android?',
       'faq6.a':
-        'Primeiro iOS, Android ainda este ano. Entre na lista marcando "Android" e a gente te avisa quando o beta abrir.',
+        'Primeiro iOS, Android ainda este ano. Entre na lista e a gente te avisa quando o beta do Android abrir.',
 
       'cta.title': 'Recupere as suas noites.',
       'cta.sub':
@@ -719,10 +720,10 @@
       'privacy.p.sub.intro': 'Contamos com estes provedores para operar a Recadly:',
       'privacy.p.sub.anthropic': '<strong>Anthropic</strong> — sugestões de resposta com IA e classificação de mensagens.',
       'privacy.p.sub.neon': '<strong>Neon</strong> — hospedagem do banco de dados (União Europeia — Frankfurt, Alemanha).',
-      'privacy.p.sub.fly': '<strong>Fly.io</strong> — hospedagem da aplicação (União Europeia — Frankfurt, Alemanha).',
+      'privacy.p.sub.fly': '<strong>Fly.io</strong> — hospedagem da aplicação (União Europeia — Frankfurt, Alemanha), quando a aplicação está implantada lá.',
       'privacy.p.sub.meta': '<strong>Meta Platforms</strong> — Instagram, a fonte dos dados de mensageria.',
       'privacy.h.storage': '8. Onde seus dados são armazenados',
-      'privacy.p.storage': 'O banco de dados e os servidores da Recadly estão hospedados na União Europeia (Frankfurt, Alemanha).',
+      'privacy.p.storage': 'O banco de dados da Recadly está hospedado na União Europeia (Frankfurt, Alemanha), e a aplicação roda em infraestrutura na UE operada pela controladora dos dados ou, quando implantada lá, na Fly.io (Frankfurt, Alemanha).',
       'privacy.h.retention': '9. Retenção de dados',
       'privacy.p.retention': 'Mantemos seus dados enquanto sua conta do Instagram permanecer conectada à Recadly. Quando você desconectar a conta ou solicitar a exclusão, removemos os dados armazenados — veja a Seção 11 e nossa página <a href="data-deletion.html">Exclusão de dados</a>.',
       'privacy.h.rights': '10. Seus direitos',
@@ -848,10 +849,13 @@
     const dict = T[lang] || T[DEFAULT_LANG];
     document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
 
-    // Title + meta description
+    // Title + meta description. Pages whose description tag carries
+    // data-i18n-content own their copy — handled in the loop below.
     if (dict['meta.title']) document.title = dict['meta.title'];
     const meta = document.querySelector('meta[name="description"]');
-    if (meta && dict['meta.description']) meta.setAttribute('content', dict['meta.description']);
+    if (meta && !meta.hasAttribute('data-i18n-content') && dict['meta.description']) {
+      meta.setAttribute('content', dict['meta.description']);
+    }
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const k = el.getAttribute('data-i18n');
@@ -868,6 +872,10 @@
     document.querySelectorAll('[data-i18n-aria]').forEach(el => {
       const k = el.getAttribute('data-i18n-aria');
       if (dict[k] != null) el.setAttribute('aria-label', dict[k]);
+    });
+    document.querySelectorAll('[data-i18n-content]').forEach(el => {
+      const k = el.getAttribute('data-i18n-content');
+      if (dict[k] != null) el.setAttribute('content', dict[k]);
     });
 
     // Reset signup buttons to current "cta" text (they may have been
