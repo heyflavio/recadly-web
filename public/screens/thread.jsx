@@ -1,11 +1,10 @@
 // screens/thread.jsx — Conversation Thread (the hero screen)
 // Instagram-style DM layout: header → messages → AI suggestion strip → compose.
 // All user-visible copy goes through window.tr() so the language picker
-// on the landing page swaps content live. Falls back to EN literals when
-// i18n isn't loaded (e.g. when this file is used inside the design canvas).
+// on the landing page swaps content live (i18n.js/i18n-screens.js load first).
 
-const _tr = (k, fb) => (window.tr ? window.tr(k, fb) : fb);
-const _useLang = () => (window.useLang ? window.useLang() : 'en');
+const _tr = window.tr;
+const _useLang = window.useLang;
 
 function ThreadHeader({ theme, name, handle, presence }) {
   const t = useT(theme);
@@ -91,7 +90,7 @@ function SuggestStrip({ theme, suggestions, onPick }) {
           <button key={i} onClick={() => onPick && onPick(s)} style={{
             flexShrink: 0, maxWidth: 260, textAlign: 'left',
             background: t.accentFill, color: t.accentText,
-            border: `1px solid ${theme === 'dark' ? 'rgba(255,136,133,0.22)' : 'rgba(229,91,80,0.18)'}`,
+            border: '1px solid rgba(229,91,80,0.18)',
             borderRadius: 14, padding: '10px 14px',
             fontFamily: FONT, fontSize: 14, lineHeight: '18px',
             fontWeight: 500, letterSpacing: -0.15, cursor: 'pointer',
@@ -203,7 +202,7 @@ function ConversationThread({ theme = 'light', draft = '', focused = false, sugg
           padding: '4px 10px', borderRadius: 999, marginTop: 4, marginBottom: 2,
           background: t.accentFill, color: t.accentText,
           fontSize: 11, fontWeight: 600, letterSpacing: 0.2,
-          border: `1px solid ${theme === 'dark' ? 'rgba(255,136,133,0.22)' : 'rgba(229,91,80,0.16)'}`,
+          border: '1px solid rgba(229,91,80,0.16)',
         }}>
           <Icons.sparkleFill size={11} color={t.accentText} />
           {_tr('thread.aiHint', 'Recadly noticed a question about shipping & returns')}

@@ -61,48 +61,12 @@
       'inbox.preview.diego':    'Cool will wait for the restock!',
       'inbox.preview.hana':     'Thanks for the quick reply 🧡',
       'inbox.time.yesterday':   'Yesterday',
-      'inbox.time.mon':         'Mon',
 
       // ── Tab bar ──────────────────────────────────────────
       'tab.inbox':              'Inbox',
       'tab.rules':              'Rules',
       'tab.approvals':          'Approvals',
       'tab.settings':           'Account',
-
-      // ── Onboarding ───────────────────────────────────────
-      'onb.eyebrow':            'Recadly',
-      'onb.title.l1':           'Never leave a customer',
-      'onb.title.l2':           'on read again.',
-      'onb.body':               'You tell Recadly which topics matter. It quietly drafts a reply in your voice for any matching DM or post comment — approve each one yourself, or let trusted topics handle themselves.',
-      'onb.trust':              'Official Meta API · disconnect anytime',
-      'onb.connect':            'Connect Instagram account',
-      'onb.later':              "I'll do this later",
-      'onb.bubble.in':          'Are you open today?',
-      'onb.bubble.out':         'Yes — until 8pm 🧡',
-
-      // ── Rules ────────────────────────────────────────────
-      'rules.title':            'Rules',
-      'rules.active':           '5 rules active',
-      'rules.desc':             'When a message matches a topic, Recadly drafts the right reply or routes it to the right person.',
-      'rules.thisWeek':         'this week',
-      'rules.whenMentions':     'When message mentions',
-      'rules.newRule':          'New rule',
-      'rules.newRuleSub':       'Match a topic, draft a reply, or route',
-      'rules.r1.name':          'Shipping & delivery',
-      'rules.r1.kw':            'ship|delivery|tracking|eta',
-      'rules.r1.action':        'Draft a reply with order status',
-      'rules.r2.name':          'Sizing & fit',
-      'rules.r2.kw':            'size|fit|measurements',
-      'rules.r2.action':        'Reply with the size guide link',
-      'rules.r3.name':          'Returns & exchanges',
-      'rules.r3.kw':            'return|exchange|refund',
-      'rules.r3.action':        'Draft a reply + tag for review',
-      'rules.r4.name':          'Press & collabs',
-      'rules.r4.kw':            'press|collab|pr',
-      'rules.r4.action':        'Forward to noor@brand.studio',
-      'rules.r5.name':          'Out-of-hours auto-ack',
-      'rules.r5.kw':            'after 8pm',
-      'rules.r5.action':        'Send a warm holding reply',
 
       // ── Approval inbox ───────────────────────────────────
       'appr.title':             'Approvals',
@@ -175,48 +139,12 @@
       'inbox.preview.diego':    '¡Genial, espero a la reposición!',
       'inbox.preview.hana':     'Gracias por la respuesta rápida 🧡',
       'inbox.time.yesterday':   'Ayer',
-      'inbox.time.mon':         'Lun',
 
       // ── Tab bar ──────────────────────────────────────────
       'tab.inbox':              'Bandeja',
       'tab.rules':              'Reglas',
       'tab.approvals':          'Pendientes',
       'tab.settings':           'Cuenta',
-
-      // ── Onboarding ───────────────────────────────────────
-      'onb.eyebrow':            'Recadly',
-      'onb.title.l1':           'No vuelvas a dejar',
-      'onb.title.l2':           'a un cliente en visto.',
-      'onb.body':               'Tú le dices a Recadly qué temas te importan. Redacta sin hacer ruido una respuesta en tu voz para cada DM o comentario que coincida — apruebas cada una, o dejas que ciertos temas se respondan solos.',
-      'onb.trust':              'API oficial de Meta · desconecta cuando quieras',
-      'onb.connect':            'Conectar cuenta de Instagram',
-      'onb.later':              'Lo haré más tarde',
-      'onb.bubble.in':          '¿Abren hoy?',
-      'onb.bubble.out':         'Sí — hasta las 20h 🧡',
-
-      // ── Rules ────────────────────────────────────────────
-      'rules.title':            'Reglas',
-      'rules.active':           '5 reglas activas',
-      'rules.desc':             'Cuando un mensaje coincide con un tema, Recadly redacta la respuesta correcta o lo encamina a la persona indicada.',
-      'rules.thisWeek':         'esta semana',
-      'rules.whenMentions':     'Cuando el mensaje menciona',
-      'rules.newRule':          'Nueva regla',
-      'rules.newRuleSub':       'Detecta un tema, redacta una respuesta o reenvía',
-      'rules.r1.name':          'Envíos y entregas',
-      'rules.r1.kw':            'envío|entrega|tracking|tiempo',
-      'rules.r1.action':        'Redacta una respuesta con el estado del pedido',
-      'rules.r2.name':          'Tallas y ajuste',
-      'rules.r2.kw':            'talla|ajuste|medidas',
-      'rules.r2.action':        'Responde con el enlace de la guía de tallas',
-      'rules.r3.name':          'Devoluciones y cambios',
-      'rules.r3.kw':            'devolución|cambio|reembolso',
-      'rules.r3.action':        'Redacta una respuesta + marca para revisar',
-      'rules.r4.name':          'Prensa y colabs',
-      'rules.r4.kw':            'prensa|colab|pr',
-      'rules.r4.action':        'Reenvía a noor@brand.studio',
-      'rules.r5.name':          'Auto-respuesta fuera de horario',
-      'rules.r5.kw':            'después de 20h',
-      'rules.r5.action':        'Envía una respuesta cálida de espera',
 
       // ── Approval inbox ───────────────────────────────────
       'appr.title':             'Pendientes',
@@ -289,48 +217,12 @@
       'inbox.preview.diego':    'Show, espero a reposição!',
       'inbox.preview.hana':     'Valeu pela resposta rápida 🧡',
       'inbox.time.yesterday':   'Ontem',
-      'inbox.time.mon':         'Seg',
 
       // ── Tab bar ──────────────────────────────────────────
       'tab.inbox':              'Caixa',
       'tab.rules':              'Regras',
       'tab.approvals':          'Aprovações',
       'tab.settings':           'Conta',
-
-      // ── Onboarding ───────────────────────────────────────
-      'onb.eyebrow':            'Recadly',
-      'onb.title.l1':           'Nunca mais deixe',
-      'onb.title.l2':           'um cliente no vácuo.',
-      'onb.body':               'Você diz ao Recadly quais tópicos importam. Ele rascunha sem barulho uma resposta na sua voz para cada DM ou comentário que combinar — você aprova cada uma, ou deixa que tópicos confiáveis se respondam sozinhos.',
-      'onb.trust':              'API oficial da Meta · desconecte quando quiser',
-      'onb.connect':            'Conectar conta do Instagram',
-      'onb.later':              'Faço isso depois',
-      'onb.bubble.in':          'Vocês abrem hoje?',
-      'onb.bubble.out':         'Sim — até as 20h 🧡',
-
-      // ── Rules ────────────────────────────────────────────
-      'rules.title':            'Regras',
-      'rules.active':           '5 regras ativas',
-      'rules.desc':             'Quando uma mensagem combina com um tópico, o Recadly rascunha a resposta certa ou encaminha pra pessoa certa.',
-      'rules.thisWeek':         'esta semana',
-      'rules.whenMentions':     'Quando a mensagem mencionar',
-      'rules.newRule':          'Nova regra',
-      'rules.newRuleSub':       'Detecte um tópico, rascunhe uma resposta ou encaminhe',
-      'rules.r1.name':          'Frete e entrega',
-      'rules.r1.kw':            'frete|entrega|rastreio|prazo',
-      'rules.r1.action':        'Rascunha uma resposta com o status do pedido',
-      'rules.r2.name':          'Tamanho e caimento',
-      'rules.r2.kw':            'tamanho|caimento|medidas',
-      'rules.r2.action':        'Responde com o link do guia de tamanhos',
-      'rules.r3.name':          'Trocas e devoluções',
-      'rules.r3.kw':            'troca|devolução|reembolso',
-      'rules.r3.action':        'Rascunha uma resposta + marca pra revisão',
-      'rules.r4.name':          'Imprensa e colabs',
-      'rules.r4.kw':            'imprensa|colab|pr',
-      'rules.r4.action':        'Encaminha pra noor@brand.studio',
-      'rules.r5.name':          'Resposta fora de horário',
-      'rules.r5.kw':            'depois das 20h',
-      'rules.r5.action':        'Envia uma resposta calorosa de espera',
 
       // ── Approval inbox ───────────────────────────────────
       'appr.title':             'Aprovações',
@@ -355,13 +247,8 @@
     },
   };
 
-  // Merge into the main translations dict from i18n.js (or seed it if
-  // i18n.js hasn't loaded — the screens can run standalone in the canvas).
+  // Merge into the main translations dict from i18n.js (always loaded first).
   function merge() {
-    window.RecadlyI18n = window.RecadlyI18n || {
-      currentLang: () => 'en',
-      translations: { en: {}, es: {}, pt: {} },
-    };
     const T = window.RecadlyI18n.translations;
     for (const lang of Object.keys(S)) {
       T[lang] = Object.assign(T[lang] || {}, S[lang]);

@@ -1,8 +1,8 @@
 // screens/approval.jsx — Approval inbox (cards: incoming → AI draft → actions)
-// All copy goes through window.tr() with EN fallbacks for canvas use.
+// All copy goes through window.tr() (i18n.js/i18n-screens.js load first).
 
-const _trA = (k, fb) => (window.tr ? window.tr(k, fb) : fb);
-const _useLangA = () => (window.useLang ? window.useLang() : 'en');
+const _trA = window.tr;
+const _useLangA = window.useLang;
 
 function ApprovalCard({ theme, name, handle, time, incoming, draft, tag, confidence, last }) {
   const t = useT(theme);
@@ -10,8 +10,7 @@ function ApprovalCard({ theme, name, handle, time, incoming, draft, tag, confide
     <div style={{
       background: t.bg, borderRadius: 22,
       padding: 16,
-      boxShadow: theme === 'light' ? '0 2px 8px rgba(0,0,0,0.05), 0 0 0 0.5px rgba(0,0,0,0.04)' : 'none',
-      border: theme === 'dark' ? `0.5px solid ${t.separator}` : 'none',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.05), 0 0 0 0.5px rgba(0,0,0,0.04)',
       marginBottom: last ? 0 : 12,
     }}>
       {/* Header: who + topic tag */}
@@ -63,7 +62,7 @@ function ApprovalCard({ theme, name, handle, time, incoming, draft, tag, confide
           {[0,1,2].map(i => (
             <div key={i} style={{
               width: 5, height: 5, borderRadius: 3,
-              background: i < confidence ? t.accent : (theme === 'dark' ? '#4A4A4A' : '#D9D9D9'),
+              background: i < confidence ? t.accent : '#D9D9D9',
             }} />
           ))}
           <span style={{ marginLeft: 3 }}>
@@ -78,8 +77,8 @@ function ApprovalCard({ theme, name, handle, time, incoming, draft, tag, confide
       <div style={{
         padding: '12px 14px',
         background: t.accentFill,
-        color: theme === 'dark' ? t.body : t.heading,
-        border: `1px solid ${theme === 'dark' ? 'rgba(255,136,133,0.22)' : 'rgba(229,91,80,0.16)'}`,
+        color: t.heading,
+        border: '1px solid rgba(229,91,80,0.16)',
         borderRadius: 14,
         fontSize: 14.5, lineHeight: '20px', letterSpacing: -0.15,
         whiteSpace: 'pre-wrap',
@@ -142,7 +141,7 @@ function ApprovalInbox({ theme = 'light' }) {
   return (
     <div style={{
       flex: 1, display: 'flex', flexDirection: 'column',
-      background: theme === 'dark' ? t.bg : '#FAFAFA', minHeight: 0,
+      background: '#FAFAFA', minHeight: 0,
     }}>
       <div style={{ padding: '4px 20px 14px' }}>
         <div style={{

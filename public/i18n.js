@@ -4,7 +4,6 @@
      <element data-i18n="key">…</element>          → swaps textContent
      <element data-i18n-html="key">…</element>     → swaps innerHTML (allows <em>, <br/>)
      <input  data-i18n-placeholder="key" />        → swaps placeholder
-     <element data-i18n-aria="key" />              → swaps aria-label
      <meta   data-i18n-content="key" />            → swaps content
    The picker (.lang-picker) reads/writes lang from localStorage.recadly-lang. */
 
@@ -142,7 +141,6 @@
       'footer.privacy': 'Privacy policy',
       'footer.terms': 'Terms of service',
       'footer.dpa': 'Data deletion',
-      'footer.cookies': 'Cookies',
       'footer.copy': '© 2026 Recadly. All rights reserved.',
       'footer.privacy_short': 'Privacy',
       'footer.terms_short': 'Terms',
@@ -405,7 +403,6 @@
       'footer.privacy': 'Política de privacidad',
       'footer.terms': 'Términos del servicio',
       'footer.dpa': 'Eliminación de datos',
-      'footer.cookies': 'Cookies',
       'footer.copy': '© 2026 Recadly. Todos los derechos reservados.',
       'footer.privacy_short': 'Privacidad',
       'footer.terms_short': 'Términos',
@@ -668,7 +665,6 @@
       'footer.privacy': 'Política de privacidade',
       'footer.terms': 'Termos de serviço',
       'footer.dpa': 'Exclusão de dados',
-      'footer.cookies': 'Cookies',
       'footer.copy': '© 2026 Recadly. Todos os direitos reservados.',
       'footer.privacy_short': 'Privacidade',
       'footer.terms_short': 'Termos',
@@ -868,10 +864,6 @@
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const k = el.getAttribute('data-i18n-placeholder');
       if (dict[k] != null) el.setAttribute('placeholder', dict[k]);
-    });
-    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
-      const k = el.getAttribute('data-i18n-aria');
-      if (dict[k] != null) el.setAttribute('aria-label', dict[k]);
     });
     document.querySelectorAll('[data-i18n-content]').forEach(el => {
       const k = el.getAttribute('data-i18n-content');

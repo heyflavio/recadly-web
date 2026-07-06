@@ -15,29 +15,9 @@
 
   var ENDPOINT = 'https://recadly-backend.fly.dev/waitlist';
 
-  function i18n(key, fallback) {
-    try {
-      var rb = window.RecadlyI18n;
-      var lang = rb && rb.currentLang && rb.currentLang();
-      var dict = rb && rb.translations && lang && rb.translations[lang];
-      var hit = dict && dict[key];
-      return hit || fallback || key;
-    } catch (_) {
-      return fallback || key;
-    }
-  }
-
-  function pickLocale() {
-    try {
-      return (
-        (window.RecadlyI18n && window.RecadlyI18n.currentLang && window.RecadlyI18n.currentLang()) ||
-        (navigator.language || '').slice(0, 5) ||
-        null
-      );
-    } catch (_) {
-      return null;
-    }
-  }
+  // i18n.js + i18n-screens.js load in <head> before this script, so the
+  // window.tr() / RecadlyI18n globals are always available here.
+  var i18n = window.tr;
 
   function attach(form) {
     if (form.__waitlistWired) return;
@@ -86,7 +66,7 @@
         body: JSON.stringify({
           email: email,
           source: source,
-          locale: pickLocale(),
+          locale: window.RecadlyI18n.currentLang(),
         }),
       })
         .then(function (res) {

@@ -1,5 +1,5 @@
 // theme.jsx — Recadly design tokens + shared chrome primitives
-// Semantic color tokens (light/dark), spacing, type scale, SF-style icons.
+// Semantic color tokens (light), spacing, type scale, SF-style icons.
 
 const TOKENS = {
   light: {
@@ -18,28 +18,12 @@ const TOKENS = {
     chrome:    '#FFFFFF',  // nav bar bg
     chromeBlur:'rgba(255,255,255,0.82)',
   },
-  dark: {
-    bg:        '#252525',
-    surface:   '#333333',
-    surface2:  '#2D2D2D',
-    heading:   '#FFFFFF',
-    body:      '#F5F5F5',
-    secondary: '#9A9A9A',
-    accent:    '#FF6F61',
-    accentSoft:'#FF8885',
-    accentText:'#FF8885',
-    accentFill:'#3A2A28',  // deep coral-tinted surface
-    separator: '#3D3D3D',
-    onAccent:  '#FFFFFF',
-    chrome:    '#252525',
-    chromeBlur:'rgba(37,37,37,0.82)',
-  },
 };
 
 const FONT = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif';
 
 // useT: returns the active token set for a given theme key
-function useT(theme) { return TOKENS[theme === 'dark' ? 'dark' : 'light']; }
+function useT(theme) { return TOKENS.light; }
 
 // ─────────────────────────────────────────────────────────────
 // Icons — SF-Symbols-style line glyphs. stroke 1.8, rounded caps.
@@ -54,12 +38,8 @@ const Icon = ({ d, size = 22, color = 'currentColor', fill = 'none', strokeWidth
 
 const Icons = {
   chevronLeft: (p) => <Icon {...p} d={<path d="M15 5l-7 7 7 7"/>} />,
-  chevronRight:(p) => <Icon {...p} d={<path d="M9 5l7 7-7 7"/>} />,
-  chevronDown: (p) => <Icon {...p} d={<path d="M5 9l7 7 7-7"/>} />,
   ellipsis:    (p) => <Icon {...p} fill="currentColor" strokeWidth="0" d={<>
     <circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></>} />,
-  phone:       (p) => <Icon {...p} d={<path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A14 14 0 014 6a2 2 0 011-2z"/>} />,
-  video:       (p) => <Icon {...p} d={<><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10l5-3v10l-5-3z"/></>} />,
   send:        (p) => <Icon {...p} fill="currentColor" strokeWidth="0" d={<path d="M12 4l-7 7h4v8h6v-8h4z"/>} />,
   // Sparkle — the AI mark. Four-point star with two small accent sparkles.
   sparkle: ({ size = 22, color = 'currentColor', strokeWidth = 1.6 }) => (
@@ -76,32 +56,12 @@ const Icons = {
     </svg>
   ),
   search:      (p) => <Icon {...p} d={<><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></>} />,
-  plus:        (p) => <Icon {...p} d={<><path d="M12 5v14"/><path d="M5 12h14"/></>} />,
   check:       (p) => <Icon {...p} d={<path d="M5 12.5l4.5 4.5L19 7"/>} />,
   x:           (p) => <Icon {...p} d={<><path d="M6 6l12 12"/><path d="M18 6L6 18"/></>} />,
   pencil:      (p) => <Icon {...p} d={<><path d="M4 20l4-1 10-10-3-3L5 16l-1 4z"/><path d="M14 7l3 3"/></>} />,
-  bell:        (p) => <Icon {...p} d={<><path d="M6 16V11a6 6 0 0112 0v5l1.5 2H4.5L6 16z"/><path d="M10 20a2 2 0 004 0"/></>} />,
-  tag:         (p) => <Icon {...p} d={<><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="8" cy="8" r="1.3" fill="currentColor"/></>} />,
   flow:        (p) => <Icon {...p} d={<><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.7 7.7l3 8.3M16.3 7.7l-3 8.3"/></>} />,
-  inbox:       (p) => <Icon {...p} d={<><path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 2h6l1-2h5"/></>} />,
   settings:    (p) => <Icon {...p} d={<><circle cx="12" cy="12" r="3"/><path d="M19 12l2-1.5-1-2.5-2.5.5-1.5-1.5.5-2.5L14 3l-2 2h-2L8 3 5.5 4.5 6 7 4.5 8.5 2 8l-1 2.5 2 1.5-2 1.5 1 2.5 2.5-.5L6 17l-.5 2.5L8 21l2-2h2l2 2 2.5-1.5L16 17l1.5-1.5 2.5.5 1-2.5z"/></>} />,
-  instagram:   ({ size = 22, color = 'currentColor', strokeWidth = 1.8 }) => (
-    // generic camera/square — placeholder for the "connect IG" CTA, not the
-    // real Instagram glyph (we explicitly avoid copying that branding).
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color}
-      strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="3" width="18" height="18" rx="5"/>
-      <circle cx="12" cy="12" r="4"/>
-      <circle cx="17.5" cy="6.5" r="0.8" fill={color} stroke="none"/>
-    </svg>
-  ),
-  shieldCheck: (p) => <Icon {...p} d={<><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></>} />,
-  bolt:        (p) => <Icon {...p} d={<path d="M13 3L5 14h6l-1 7 8-11h-6z"/>} />,
-  globe:       (p) => <Icon {...p} d={<><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18a14 14 0 010-18z"/></>} />,
   chat:        (p) => <Icon {...p} d={<path d="M4 5h16v11H8l-4 4z"/>} />,
-  // Two-bubble comment glyph — distinct from "chat" so the inbox can
-  // visually separate post/reel comments from DMs.
-  comment:     (p) => <Icon {...p} d={<><path d="M3 5h13v9H8l-3 3v-3H3z"/><path d="M9 11h8l3 3v-7a2 2 0 00-2-2"/></>} />,
   heart:       (p) => <Icon {...p} d={<path d="M12 20S4 14 4 8.5A4.5 4.5 0 0112 6a4.5 4.5 0 018 2.5C20 14 12 20 12 20z"/>} />,
 };
 
@@ -161,41 +121,11 @@ function Bubble({ side, theme, children, tail = true, maxWidth = '76%' }) {
 }
 
 // ─────────────────────────────────────────────────────────────
-// Chip — small rounded pill used for AI suggestions, filters, etc.
-// variant: 'suggest' (coral-tinted) | 'plain' (surface) | 'accent' (filled)
-// ─────────────────────────────────────────────────────────────
-function Chip({ theme, variant = 'plain', icon, children, style = {} }) {
-  const t = useT(theme);
-  const styles = {
-    suggest: {
-      background: t.accentFill,
-      color: t.accentText,
-      border: `1px solid ${theme === 'dark' ? 'rgba(255,136,133,0.18)' : 'rgba(229,91,80,0.16)'}`,
-    },
-    plain: { background: t.surface, color: t.body, border: 'none' },
-    accent:{ background: t.accent, color: t.onAccent, border: 'none' },
-  }[variant];
-  return (
-    <div style={{
-      display: 'inline-flex', alignItems: 'center', gap: 6,
-      padding: '8px 12px', borderRadius: 999,
-      fontFamily: FONT, fontSize: 14, fontWeight: 500,
-      letterSpacing: -0.15, lineHeight: '18px',
-      ...styles, ...style,
-    }}>
-      {icon}
-      {children}
-    </div>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────
-// StatusBar + HomeIndicator — minimal, theme-aware. The starter's
-// IOSDevice provides these too, but we want custom-styled screens
-// without its nav bar, so we re-render here scoped to the screen.
+// StatusBar + HomeIndicator — minimal, scoped to the screen so we
+// can render custom-styled screens without a built-in nav bar.
 // ─────────────────────────────────────────────────────────────
 function StatusBar({ theme, time = '9:41' }) {
-  const c = theme === 'dark' ? '#fff' : '#000';
+  const c = '#000';
   return (
     <div style={{
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
@@ -237,16 +167,15 @@ function HomeIndicator({ theme }) {
     }}>
       <div style={{
         width: 139, height: 5, borderRadius: 100,
-        background: theme === 'dark' ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.25)',
+        background: 'rgba(0,0,0,0.25)',
       }} />
     </div>
   );
 }
 
 // ─────────────────────────────────────────────────────────────
-// Phone — minimal phone shell. We do NOT use the starter IOSDevice
-// directly because most screens want full-bleed custom nav rather
-// than its built-in nav bar. width 402 / height 874 matches it.
+// Phone — minimal phone shell with full-bleed custom nav.
+// width 402 / height 874 matches the iPhone mock size.
 // ─────────────────────────────────────────────────────────────
 function Phone({ theme, children, statusBar = true, dynamicIsland = true }) {
   const t = useT(theme);
@@ -275,4 +204,4 @@ function Phone({ theme, children, statusBar = true, dynamicIsland = true }) {
   );
 }
 
-Object.assign(window, { TOKENS, FONT, useT, Icons, Avatar, Bubble, Chip, StatusBar, HomeIndicator, Phone });
+Object.assign(window, { TOKENS, FONT, useT, Icons, Avatar, Bubble, StatusBar, HomeIndicator, Phone });

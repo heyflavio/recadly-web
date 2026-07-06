@@ -1,12 +1,11 @@
 // screens/inbox.jsx — Conversation list
-// Localized via window.tr() / window.useLang(). Falls back to EN literals
-// when used standalone in the design canvas (no i18n).
+// Localized via window.tr() / window.useLang() (i18n.js/i18n-screens.js load first).
 //
 // Mirrors the real app's two-source inbox: DMs *and* post/reel Comments,
 // switched with the segmented control at the top.
 
-const _trI = (k, fb) => (window.tr ? window.tr(k, fb) : fb);
-const _useLangI = () => (window.useLang ? window.useLang() : 'en');
+const _trI = window.tr;
+const _useLangI = window.useLang;
 
 // Inbox row. `kind` is 'dm' (default) or 'comment'. Comment rows show a
 // small swatch standing in for the post/reel thumbnail + a "commented on"
