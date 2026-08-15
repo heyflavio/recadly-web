@@ -36,6 +36,7 @@
       <div class="nav-links">
         <a href="#features" data-i18n="nav.features">Features</a>
         <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#cost" data-i18n="nav.cost">The maths</a>
         <a href="#trust" data-i18n="nav.privacy">Privacy</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
       </div>
@@ -56,10 +57,10 @@
         </span>
         <h1 class="h1" data-i18n-html="hero.h1">Never leave a customer <em>on read</em> again.</h1>
         <p class="lede" data-i18n="hero.lede">
-          You tell Recadly which topics matter. It quietly drafts a reply in
-          your voice for any matching Instagram DM or post comment — approve
-          each one yourself, or let trusted topics handle themselves. Your
-          voice always stays yours.
+          You tell Recadly which topics matter. It drafts the reply in your
+          written voice — or records it in your cloned voice — for any matching
+          Instagram DM or comment. Approve each one, or let trusted topics
+          handle themselves. Nothing goes out that you didn't allow.
         </p>
 
         <form class="signup" data-waitlist-source="hero" data-success-key="hero.cta_done" data-success-fallback="You’re on the list ✨">
@@ -86,8 +87,8 @@
     <div class="container">
       <div class="section-head">
         <div class="section-eyebrow" data-i18n="features.eyebrow">What Recadly does</div>
-        <h2 class="section-title" data-i18n="features.title">Three quiet helpers, one calmer inbox.</h2>
-        <p class="section-sub" data-i18n="features.sub">Each feature stays out of the way until you need it. Nothing sends without your tap.</p>
+        <h2 class="section-title" data-i18n="features.title">Six quiet helpers, one calmer inbox.</h2>
+        <p class="section-sub" data-i18n="features.sub">Each one stays out of the way until you need it. You decide, per topic, whether it drafts and waits — or answers on its own.</p>
       </div>
 
       <div class="features">
@@ -96,30 +97,92 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l1.6 4.6a3 3 0 002 2L20 11l-4.4 1.4a3 3 0 00-2 2L12 19l-1.6-4.6a3 3 0 00-2-2L4 11l4.4-1.4a3 3 0 002-2z"/></svg>
           </div>
           <h3 data-i18n="feature1.title">Suggested replies</h3>
-          <p data-i18n="feature1.body">Above the compose bar, you see two or three drafts Recadly thinks fit. Tap one to drop it into the field — edit, then send.</p>
+          <p data-i18n="feature1.body">Above the compose bar you get drafts written from the whole recent exchange — not just the last message. Tap one, edit a word, send.</p>
         </div>
 
         <div class="feature">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.7 7.7l3 8.3M16.3 7.7l-3 8.3"/></svg>
           </div>
-          <h3 data-i18n="feature2.title">Topic routing</h3>
-          <p data-i18n="feature2.body">Set up rules for sizing, shipping, returns, press — Recadly tags, drafts the right reply, or forwards to the right teammate.</p>
+          <h3 data-i18n="feature2.title">Rules per topic</h3>
+          <p data-i18n="feature2.body">Sizing, shipping, prices, press — each topic gets its own rule: suggest only, auto-reply, or auto-reply once and then suggest. One toggle each.</p>
         </div>
 
         <div class="feature">
           <div class="feature-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/><path d="M9 11h6M9 8h6"/></svg>
           </div>
-          <h3 data-i18n="feature3.title">Approval inbox</h3>
-          <p data-i18n="feature3.body">Every AI draft lives in one place. Approve, edit, or skip in a single thumb-swipe. Your voice always stays yours.</p>
+          <h3 data-i18n="feature3.title">Approvals queue</h3>
+          <p data-i18n="feature3.body">Every draft in one place, grouped by rule. Generate a whole section at once, send all, or clear it and start over. Coffee-length work.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 8v8M16 8v8M4 11v2M20 11v2"/></svg>
+          </div>
+          <h3 data-i18n="feature4.title">Voice notes in your voice</h3>
+          <p data-i18n="feature4.body">Clone your voice once. Recadly can answer with a real audio note — the format people actually open — or send one you pre-recorded.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M4 12h7M4 18h12"/><path d="M17 15l3 3-3 3"/></svg>
+          </div>
+          <h3 data-i18n="feature5.title">Follow-through</h3>
+          <p data-i18n="feature5.body">The chats that go quiet are the ones that cost you. Recadly picks the thread back up, keeps the thread of the conversation, and stops the moment it closes.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg>
+          </div>
+          <h3 data-i18n="feature6.title">A funnel you can see</h3>
+          <p data-i18n="feature6.body">Every chat carries a stage, tagged automatically. The funnel view shows where they stall, which words start the good conversations, and who is close to buying.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Funnel narrative: follower → customer ────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="funnel.eyebrow">Follower → customer</div>
+        <h2 class="section-title" data-i18n-html="funnel.title">Four things happen<br/>between the DM and the sale.</h2>
+        <p class="section-sub" data-i18n="funnel.sub">Most tools do the first one. Recadly stays for all four.</p>
+      </div>
+
+      <div class="funnel">
+        <div class="funnel-stage">
+          <div class="funnel-kicker" data-i18n="funnel1.kicker">01 · Notices</div>
+          <h3 data-i18n="funnel1.title">It spots the ones that matter</h3>
+          <p data-i18n="funnel1.body">DMs, comments on your posts and reels, replies to your stories — all in one inbox. Recadly matches each against your topics and tags the ones worth your time.</p>
+          <span class="funnel-tag" data-i18n="funnel1.tag">Auto-tagging</span>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-kicker" data-i18n="funnel2.kicker">02 · Answers</div>
+          <h3 data-i18n="funnel2.title">It replies the way you would</h3>
+          <p data-i18n="funnel2.body">Text or a voice note in your cloned voice, drafted from your own past messages and your written instructions. Waiting for your tap, or sent on its own — your call, per topic.</p>
+          <span class="funnel-tag" data-i18n="funnel2.tag">Your voice</span>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-kicker" data-i18n="funnel3.kicker">03 · Follows up</div>
+          <h3 data-i18n="funnel3.title">It doesn't let them go cold</h3>
+          <p data-i18n="funnel3.body">A chat that stalls gets picked back up, with the memory of what was already said. When it closes — won or lost — Recadly stops, and stops for good.</p>
+          <span class="funnel-tag" data-i18n="funnel3.tag">Follow-through</span>
+        </div>
+        <div class="funnel-stage">
+          <div class="funnel-kicker" data-i18n="funnel4.kicker">04 · Shows you</div>
+          <h3 data-i18n="funnel4.title">It tells you where the money leaks</h3>
+          <p data-i18n="funnel4.body">A live funnel from first message to closed, buy-intent scores on the inbox rows, and the objection that keeps coming back. No spreadsheet.</p>
+          <span class="funnel-tag" data-i18n="funnel4.tag">Analytics</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ── Spotlight: thread close-up ───────────────────────── -->
-  <section class="section">
+  <section class="section section-tinted">
     <div class="container">
       <div class="section-head" style="margin-bottom: 28px">
         <div class="section-eyebrow" data-i18n="spotlight.eyebrow">The thread</div>
@@ -155,6 +218,49 @@
     </div>
   </section>
 
+  <!-- ── Voice notes ──────────────────────────────────────── -->
+  <section id="voice" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="voice.eyebrow">Your actual voice</div>
+        <h2 class="section-title" data-i18n-html="voice.title">The reply they open first<br/>is the one they can hear.</h2>
+      </div>
+
+      <div class="voice-grid">
+        <div class="voice-stage">
+          <div class="voice-bubble">
+            <div class="voice-play">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M1 1.5v11l10-5.5z"/></svg>
+            </div>
+            <div class="wave" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="voice-dur">0:14</div>
+          </div>
+          <p class="voice-caption" data-i18n="voice.caption">Sent as a real Instagram audio message — not a link, not a file.</p>
+        </div>
+
+        <div>
+          <p class="lede" data-i18n="voice.lede">Record about a minute of yourself once. From then on Recadly can answer in audio — your accent, your pace, your way of trailing off at the end of a sentence.</p>
+          <div class="voice-points">
+            <div class="voice-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <p data-i18n-html="voice.p1"><strong>Two cloning services to pick from.</strong> If one doesn't sound like you, switch to the other from the app — same screen, no re-recording setup.</p>
+            </div>
+            <div class="voice-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <p data-i18n-html="voice.p2"><strong>Or keep a library of real ones.</strong> Record the answers you give every week once, and drop the right one into a thread in a tap. Nothing synthetic involved.</p>
+            </div>
+            <div class="voice-point">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <p data-i18n-html="voice.p3"><strong>You hear it before they do.</strong> Voice notes go through the same approvals queue as text. Play it, keep it or bin it, then send.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── How it works ─────────────────────────────────────── -->
   <section id="how" class="section section-tinted">
     <div class="container">
@@ -170,20 +276,73 @@
         </div>
         <div class="step">
           <div class="step-num" data-i18n="step2.kicker">STEP 02</div>
-          <h3 data-i18n="step2.title">Teach it your voice</h3>
-          <p data-i18n="step2.body">Recadly studies your last 50 sent replies to pick up your tone — your emoji habits, your warmth, your humor.</p>
+          <h3 data-i18n="step2.title">It learns from your own replies</h3>
+          <p data-i18n="step2.body">No questionnaire. Recadly reads the messages you actually typed yourself — up to 400 of them — and builds a style guide from your emoji habits, your warmth, your humour. It refreshes itself as you keep writing.</p>
         </div>
         <div class="step">
           <div class="step-num" data-i18n="step3.kicker">STEP 03</div>
-          <h3 data-i18n="step3.title">Approve, send, repeat</h3>
-          <p data-i18n="step3.body">Open a thread, tap the draft you like, send. Or batch through the approval inbox during your morning coffee.</p>
+          <h3 data-i18n="step3.title">Say what you'd never say</h3>
+          <p data-i18n="step3.body">Write your rules in plain language — prices, what's in stock, what to never promise. Recadly reads it back, tells you where it contradicts itself, and offers a cleaner version.</p>
+        </div>
+        <div class="step">
+          <div class="step-num" data-i18n="step4.kicker">STEP 04</div>
+          <h3 data-i18n="step4.title">Approve, send, repeat</h3>
+          <p data-i18n="step4.body">Open a thread and tap the draft you like. Or clear the whole approvals queue over a morning coffee. The topics you trust stop asking.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── Opportunity cost ─────────────────────────────────────
+       Three native range inputs + one script that recomputes on `input`.
+       The formula and its assumptions are spelled out under the result on
+       purpose — a number nobody can check is a number nobody believes. -->
+  <section id="cost" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow" data-i18n="cost.eyebrow">Opportunity cost · a customer isn't one sale</div>
+        <h2 class="section-title" data-i18n-html="cost.title">This is what's quietly<br/>walking out the door.</h2>
+        <p class="section-sub" data-i18n="cost.sub">A customer who never arrives doesn't cost you one ticket. They cost you that ticket for every month they would have stayed. Move the sliders.</p>
+      </div>
+
+      <div class="calc">
+        <div class="calc-panel">
+          <div class="calc-field">
+            <label for="calc-dms" data-i18n="cost.dms">DMs you leave unanswered each week</label>
+            <div class="calc-value"><output id="calc-dms-out" for="calc-dms">20</output><span data-i18n="cost.dms_unit">messages</span></div>
+            <input type="range" id="calc-dms" min="5" max="100" step="1" value="20" />
+            <div class="calc-range"><span>5</span><span>100</span></div>
+          </div>
+
+          <div class="calc-field">
+            <label for="calc-ticket" data-i18n="cost.ticket">What a customer pays you, on average</label>
+            <div class="calc-value"><output id="calc-ticket-out" for="calc-ticket">€60</output><span data-i18n="cost.ticket_unit">per month</span></div>
+            <input type="range" id="calc-ticket" min="10" max="500" step="10" value="60" />
+            <div class="calc-range"><span>€10</span><span>€500</span></div>
+          </div>
+
+          <div class="calc-field">
+            <label for="calc-months" data-i18n="cost.months">How long a customer usually stays</label>
+            <div class="calc-value"><output id="calc-months-out" for="calc-months">4</output><span data-i18n="cost.months_unit">months</span></div>
+            <input type="range" id="calc-months" min="1" max="24" step="1" value="4" />
+            <div class="calc-range"><span>1</span><span>24</span></div>
+          </div>
+        </div>
+
+        <div class="calc-panel calc-out">
+          <div class="calc-out-label" data-i18n="cost.result">Revenue that never arrives</div>
+          <div class="calc-total" id="calc-total" aria-live="polite">€1,039</div>
+          <!-- Owned by the calculator script, not by i18n.js: the string has
+               {placeholders} that must be filled before it's ever painted. -->
+          <p class="calc-formula" id="calc-formula">For every month it stays like this: <b>4.3</b> customers × <b>€60</b> × <b>4</b> months.</p>
+        </div>
+      </div>
+      <p class="calc-note" data-i18n="cost.note">Assumes 5% of unanswered DMs would have become customers. Change the numbers to yours — the arithmetic is right there.</p>
+    </div>
+  </section>
+
   <!-- ── Origin block ─────────────────────────────────────── -->
-  <section class="section">
+  <section class="section section-tinted">
     <div class="container">
       <div class="origin">
         <div class="origin-mark" data-i18n="origin.mark">Why "Recadly"</div>
@@ -198,7 +357,7 @@
   </section>
 
   <!-- ── Trust ────────────────────────────────────────────── -->
-  <section id="trust" class="section section-tinted">
+  <section id="trust" class="section">
     <div class="container">
       <div class="section-head">
         <div class="section-eyebrow" data-i18n="trust.eyebrow">Privacy by default</div>
@@ -221,8 +380,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
           </div>
           <div>
-            <h4 data-i18n="trust2.title">You own your messages</h4>
-            <p data-i18n="trust2.body">Export everything as JSON, any time. Delete your account and we wipe it inside 30 days — no follow-up emails.</p>
+            <h4 data-i18n="trust2.title">Deletion means deletion</h4>
+            <p data-i18n="trust2.body">Request deletion from inside the app and every row tied to your account goes — conversations, messages, drafts, voice profile. Not flagged as hidden. Deleted.</p>
           </div>
         </div>
         <div class="trust-item">
@@ -230,8 +389,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
           </div>
           <div>
-            <h4 data-i18n="trust3.title">Drafts expire</h4>
-            <p data-i18n="trust3.body">Unsent AI drafts disappear after 7 days. No archive sitting in a database with your customers' problems in it.</p>
+            <h4 data-i18n="trust3.title">Raw events don't pile up</h4>
+            <p data-i18n="trust3.body">Once an incoming message has been processed, the raw event Meta sent us is dropped after 30 days. We keep the conversation you can see in the app, not a second shadow copy of it.</p>
           </div>
         </div>
         <div class="trust-item">
@@ -248,7 +407,7 @@
   </section>
 
   <!-- ── FAQ ──────────────────────────────────────────────── -->
-  <section id="faq" class="section">
+  <section id="faq" class="section section-tinted">
     <div class="container">
       <div class="section-head">
         <div class="section-eyebrow" data-i18n="faq.eyebrow">Honest answers</div>
@@ -269,16 +428,24 @@
           <div class="faq-body" data-i18n="faq3.a">Only the DMs and post/reel comments that match the rules you set up. Recadly checks each incoming message against your topics — anything that doesn’t match isn’t drafted or stored. We never read your feed, your stories, your followers, or any other part of your account.</div>
         </details>
         <details>
-          <summary data-i18n="faq4.q">How much does it cost?</summary>
-          <div class="faq-body" data-i18n="faq4.a">During private beta, free for brands with fewer than 50,000 followers. After GA, we'll publish a clear per-seat price — no hidden message volume tiers, no surprise overage charges.</div>
+          <summary data-i18n="faq4.q">Is the voice note really my voice?</summary>
+          <div class="faq-body" data-i18n="faq4.a">It's a clone built from a recording of you, so yes — your accent and your pace, close enough that regulars don't notice. Two cloning services are available and you can switch between them if one doesn't sound right. If you'd rather not use a clone at all, keep a library of notes you recorded yourself and send those instead.</div>
         </details>
         <details>
-          <summary data-i18n="faq5.q">Can my team share an inbox?</summary>
-          <div class="faq-body" data-i18n="faq5.a">Yes. Add teammates by email — each person gets their own login, their own draft history, and you can route topics to specific teammates with rules.</div>
+          <summary data-i18n="faq5.q">What if it gets something wrong?</summary>
+          <div class="faq-body" data-i18n="faq5.a">Start with everything on suggest-only — nothing leaves without your tap — and switch a topic to auto-reply once you've read a few dozen of its drafts and trust them. Write what it must never say into your instructions; Recadly reads that back to you and flags where it contradicts itself. And a queued reply can still be cancelled before it goes.</div>
         </details>
         <details>
-          <summary data-i18n="faq6.q">What about Android?</summary>
-          <div class="faq-body" data-i18n="faq6.a">iOS first, Android later this year. Add yourself to the waitlist and we'll email you when the Android beta opens.</div>
+          <summary data-i18n="faq6.q">How much does it cost?</summary>
+          <div class="faq-body" data-i18n="faq6.a">Free during the private beta. When we start charging we'll publish one clear price before anyone is billed — no hidden message tiers, no surprise overage.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq7.q">Can I run more than one account?</summary>
+          <div class="faq-body" data-i18n="faq7.a">Yes — connect several Instagram accounts and switch between them in the app. Rules, instructions and the voice profile belong to each account separately, so a second brand doesn't inherit the first one's tone. There is no multi-person team login yet; today Recadly is built for the person who actually answers the DMs.</div>
+        </details>
+        <details>
+          <summary data-i18n="faq8.q">What about Android?</summary>
+          <div class="faq-body" data-i18n="faq8.a">iOS first, Android after. Add yourself to the waitlist and we'll email you when the Android beta opens.</div>
         </details>
       </div>
     </div>
@@ -314,7 +481,9 @@
           <h5 data-i18n="footer.product">Product</h5>
           <ul>
             <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#voice" data-i18n="nav.voice">Voice notes</a></li>
             <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+            <li><a href="#cost" data-i18n="nav.cost">The maths</a></li>
             <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
             <li><a href="#cta" data-i18n="nav.cta">Join the waitlist</a></li>
           </ul>
@@ -454,6 +623,53 @@
 
     ReactDOM.createRoot(document.getElementById('hero-phone')).render(<HeroCarousel />);
     ReactDOM.createRoot(document.getElementById('spotlight-phone')).render(<SpotlightPhone />);
+  </script>
+  <!-- ── Opportunity-cost calculator ────────────────────────
+       Plain JS on purpose: three range inputs, one recompute. Re-runs on
+       `recadly:lang` because both the currency format and the formula
+       sentence are locale-dependent (i18n.js has already swapped the
+       static copy by the time the event fires). -->
+  <script>
+    (function () {
+      const el = id => document.getElementById(id);
+      const dms = el('calc-dms'), ticket = el('calc-ticket'), months = el('calc-months');
+      if (!dms) return;
+
+      const WEEKS_PER_MONTH = 4.33;
+      const CONVERSION = 0.05;
+      const LOCALES = { en: 'en-IE', es: 'es-ES', pt: 'pt-BR' };
+
+      function money(n, locale) {
+        return new Intl.NumberFormat(locale, {
+          style: 'currency', currency: 'EUR', maximumFractionDigits: 0,
+        }).format(n);
+      }
+
+      function render() {
+        const lang = (window.RecadlyI18n && window.RecadlyI18n.currentLang()) || 'en';
+        const locale = LOCALES[lang] || LOCALES.en;
+        const d = +dms.value, t = +ticket.value, m = +months.value;
+        const customers = d * WEEKS_PER_MONTH * CONVERSION;
+
+        el('calc-dms-out').textContent = d;
+        el('calc-ticket-out').textContent = money(t, locale);
+        el('calc-months-out').textContent = m;
+        el('calc-total').textContent = money(Math.round(customers * t * m), locale);
+
+        const dict = (window.RecadlyI18n && window.RecadlyI18n.translations[lang]) || {};
+        const tpl = dict['cost.formula'] || '';
+        if (tpl) {
+          el('calc-formula').innerHTML = tpl
+            .replace('{customers}', customers.toLocaleString(locale, { maximumFractionDigits: 1 }))
+            .replace('{ticket}', money(t, locale))
+            .replace('{months}', m);
+        }
+      }
+
+      [dms, ticket, months].forEach(i => i.addEventListener('input', render));
+      document.addEventListener('recadly:lang', render);
+      render();
+    })();
   </script>
   <script src="waitlist.js"></script>
 </body>

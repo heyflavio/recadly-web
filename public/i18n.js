@@ -15,10 +15,12 @@
     en: {
       'meta.title': 'Recadly — never leave a customer on read again',
       'meta.description':
-        "You tell Recadly which topics matter. It quietly drafts a reply in your voice for any matching Instagram DM or post comment, ready for your approval.",
+        'You tell Recadly which topics matter. It drafts the reply in your voice — written or as a voice note — for any matching Instagram DM or comment, ready for your approval.',
 
       'nav.features': 'Features',
       'nav.how': 'How it works',
+      'nav.voice': 'Voice notes',
+      'nav.cost': 'The maths',
       'nav.privacy': 'Privacy',
       'nav.faq': 'FAQ',
       'nav.cta': 'Join the waitlist',
@@ -27,10 +29,10 @@
       'hero.eyebrow': 'Now in private beta',
       'hero.h1': 'Never leave a customer <em>on read</em> again.',
       'hero.lede':
-        "You tell Recadly which topics matter. It quietly drafts a reply in your voice for any matching Instagram DM or post comment — approve each one yourself, or let trusted topics handle themselves. Your voice always stays yours.",
+        'You tell Recadly which topics matter. It drafts the reply in your written voice — or records it in your cloned voice — for any matching Instagram DM or comment. Approve each one, or let trusted topics handle themselves. Nothing goes out that you didn’t allow.',
       'hero.placeholder': 'you@brand.studio',
       'hero.cta': 'Join the waitlist',
-      'hero.cta_done': "You\u2019re on the list ✨",
+      'hero.cta_done': 'You’re on the list ✨',
       'hero.meta': 'Official Meta API · disconnect anytime',
       'carousel.thread':    'The conversation',
       'carousel.inbox':     'DMs + post comments, in one inbox',
@@ -40,26 +42,59 @@
       'bubble.out': 'Yes — until 8pm 🧡',
 
       'features.eyebrow': 'What Recadly does',
-      'features.title': 'Three quiet helpers, one calmer inbox.',
+      'features.title': 'Six quiet helpers, one calmer inbox.',
       'features.sub':
-        'Each feature stays out of the way until you need it. Nothing sends without your tap.',
+        'Each one stays out of the way until you need it. You decide, per topic, whether it drafts and waits — or answers on its own.',
 
       'feature1.title': 'Suggested replies',
       'feature1.body':
-        "Above the compose bar, you see two or three drafts Recadly thinks fit. Tap one to drop it into the field — edit, then send.",
-      'feature2.title': 'Topic routing',
+        'Above the compose bar you get drafts written from the whole recent exchange — not just the last message. Tap one, edit a word, send.',
+      'feature2.title': 'Rules per topic',
       'feature2.body':
-        'Set up rules for sizing, shipping, returns, press — Recadly tags, drafts the right reply, or forwards to the right teammate.',
-      'feature3.title': 'Approval inbox',
+        'Sizing, shipping, prices, press — each topic gets its own rule: suggest only, auto-reply, or auto-reply once and then suggest. One toggle each.',
+      'feature3.title': 'Approvals queue',
       'feature3.body':
-        'Every AI draft lives in one place. Approve, edit, or skip in a single thumb-swipe. Your voice always stays yours.',
+        'Every draft in one place, grouped by rule. Generate a whole section at once, send all, or clear it and start over. Coffee-length work.',
+      'feature4.title': 'Voice notes in your voice',
+      'feature4.body':
+        'Clone your voice once. Recadly can answer with a real audio note — the format people actually open — or send one you pre-recorded.',
+      'feature5.title': 'Follow-through',
+      'feature5.body':
+        'The chats that go quiet are the ones that cost you. Recadly picks the thread back up, keeps the thread of the conversation, and stops the moment it closes.',
+      'feature6.title': 'A funnel you can see',
+      'feature6.body':
+        'Every chat carries a stage, tagged automatically. The funnel view shows where they stall, which words start the good conversations, and who is close to buying.',
+
+      'funnel.eyebrow': 'Follower → customer',
+      'funnel.title': 'Four things happen<br/>between the DM and the sale.',
+      'funnel.sub': 'Most tools do the first one. Recadly stays for all four.',
+      'funnel1.kicker': '01 · Notices',
+      'funnel1.title': 'It spots the ones that matter',
+      'funnel1.body':
+        'DMs, comments on your posts and reels, replies to your stories — all in one inbox. Recadly matches each against your topics and tags the ones worth your time.',
+      'funnel1.tag': 'Auto-tagging',
+      'funnel2.kicker': '02 · Answers',
+      'funnel2.title': 'It replies the way you would',
+      'funnel2.body':
+        'Text or a voice note in your cloned voice, drafted from your own past messages and your written instructions. Waiting for your tap, or sent on its own — your call, per topic.',
+      'funnel2.tag': 'Your voice',
+      'funnel3.kicker': '03 · Follows up',
+      'funnel3.title': 'It doesn’t let them go cold',
+      'funnel3.body':
+        'A chat that stalls gets picked back up, with the memory of what was already said. When it closes — won or lost — Recadly stops, and stops for good.',
+      'funnel3.tag': 'Follow-through',
+      'funnel4.kicker': '04 · Shows you',
+      'funnel4.title': 'It tells you where the money leaks',
+      'funnel4.body':
+        'A live funnel from first message to closed, buy-intent scores on the inbox rows, and the objection that keeps coming back. No spreadsheet.',
+      'funnel4.tag': 'Analytics',
 
       'spotlight.eyebrow': 'The thread',
       'spotlight.title': 'A messaging app you already know,<br/>with a calmer co-pilot.',
 
       'point1.title': 'Recadly notices the question',
       'point1.body':
-        'A small coral hint surfaces under the customer\u2019s last message — "noticed a question about shipping & returns". No takeover, no chatbot voice.',
+        'A small coral hint surfaces under the customer’s last message — "noticed a question about shipping & returns". No takeover, no chatbot voice.',
       'point2.title': 'Three drafts wait above your compose',
       'point2.body':
         'Tappable replies — short, warm, in your tone. The first one is usually right. The others give you variations.',
@@ -67,21 +102,53 @@
       'point3.body':
         'One tap drops the draft into the field. Edit a single word, change the emoji, send when you mean it. Nothing goes out behind your back.',
 
+      'voice.eyebrow': 'Your actual voice',
+      'voice.title': 'The reply they open first<br/>is the one they can hear.',
+      'voice.lede':
+        'Record about a minute of yourself once. From then on Recadly can answer in audio — your accent, your pace, your way of trailing off at the end of a sentence.',
+      'voice.caption': 'Sent as a real Instagram audio message — not a link, not a file.',
+      'voice.p1':
+        '<strong>Two cloning services to pick from.</strong> If one doesn’t sound like you, switch to the other from the app — same screen, no re-recording setup.',
+      'voice.p2':
+        '<strong>Or keep a library of real ones.</strong> Record the answers you give every week once, and drop the right one into a thread in a tap. Nothing synthetic involved.',
+      'voice.p3':
+        '<strong>You hear it before they do.</strong> Voice notes go through the same approvals queue as text. Play it, keep it or bin it, then send.',
+
       'how.eyebrow': 'How it works',
-      'how.title': 'Three minutes to set up.<br/>Hours back every week.',
+      'how.title': 'An afternoon to set up.<br/>Hours back every week.',
 
       'step1.kicker': 'STEP 01',
       'step1.title': 'Connect Instagram',
       'step1.body':
-        'Through Meta\u2019s official API. We never touch your password, and you can disconnect any time from settings.',
+        'Through Meta’s official API. We never touch your password, and you can disconnect any time from settings.',
       'step2.kicker': 'STEP 02',
-      'step2.title': 'Teach it your voice',
+      'step2.title': 'It learns from your own replies',
       'step2.body':
-        'Recadly studies your last 50 sent replies to pick up your tone — your emoji habits, your warmth, your humor.',
+        'No questionnaire. Recadly reads the messages you actually typed yourself — up to 400 of them — and builds a style guide from your emoji habits, your warmth, your humour. It refreshes itself as you keep writing.',
       'step3.kicker': 'STEP 03',
-      'step3.title': 'Approve, send, repeat',
+      'step3.title': 'Say what you’d never say',
       'step3.body':
-        'Open a thread, tap the draft you like, send. Or batch through the approval inbox during your morning coffee.',
+        'Write your rules in plain language — prices, what’s in stock, what to never promise. Recadly reads it back, tells you where it contradicts itself, and offers a cleaner version.',
+      'step4.kicker': 'STEP 04',
+      'step4.title': 'Approve, send, repeat',
+      'step4.body':
+        'Open a thread and tap the draft you like. Or clear the whole approvals queue over a morning coffee. The topics you trust stop asking.',
+
+      'cost.eyebrow': 'Opportunity cost · a customer isn’t one sale',
+      'cost.title': 'This is what’s quietly<br/>walking out the door.',
+      'cost.sub':
+        'A customer who never arrives doesn’t cost you one ticket. They cost you that ticket for every month they would have stayed. Move the sliders.',
+      'cost.dms': 'DMs you leave unanswered each week',
+      'cost.dms_unit': 'messages',
+      'cost.ticket': 'What a customer pays you, on average',
+      'cost.ticket_unit': 'per month',
+      'cost.months': 'How long a customer usually stays',
+      'cost.months_unit': 'months',
+      'cost.result': 'Revenue that never arrives',
+      'cost.formula':
+        'For every month it stays like this: <b>{customers}</b> customers × <b>{ticket}</b> × <b>{months}</b> months.',
+      'cost.note':
+        'Assumes 5% of unanswered DMs would have become customers. Change the numbers to yours — the arithmetic is right there.',
 
       'origin.mark': 'Why "Recadly"',
       'origin.quote':
@@ -89,19 +156,19 @@
       'origin.foot': 're·ca·do · /ʁɨˈkadu/ · n. a message left with care',
 
       'trust.eyebrow': 'Privacy by default',
-      'trust.title': "Your customers\u2019 messages are not training data.",
+      'trust.title': 'Your customers’ messages are not training data.',
       'trust.sub':
-        "Recadly only reads the messages that match the rules you set up \u2014 nothing else. We don\u2019t sell anything, fine-tune anything, or share anything.",
+        'Recadly only reads the messages that match the rules you set up — nothing else. We don’t sell anything, fine-tune anything, or share anything.',
 
       'trust1.title': 'Encrypted in transit and at rest',
       'trust1.body':
         'TLS 1.3 between your phone and our servers. AES-256 on disk. The same protocols your bank uses.',
-      'trust2.title': 'You own your messages',
+      'trust2.title': 'Deletion means deletion',
       'trust2.body':
-        'Export everything as JSON, any time. Delete your account and we wipe it inside 30 days — no follow-up emails.',
-      'trust3.title': 'Drafts expire',
+        'Request deletion from inside the app and every row tied to your account goes — conversations, messages, drafts, voice profile. Not flagged as hidden. Deleted.',
+      'trust3.title': 'Raw events don’t pile up',
       'trust3.body':
-        "Unsent AI drafts disappear after 7 days. No archive sitting in a database with your customers\u2019 problems in it.",
+        'Once an incoming message has been processed, the raw event Meta sent us is dropped after 30 days. We keep the conversation you can see in the app, not a second shadow copy of it.',
       'trust4.title': 'Disconnect in one tap',
       'trust4.body':
         'Revoke access from your settings. Recadly stops reading, drafting, and storing anything new — immediately.',
@@ -111,22 +178,28 @@
 
       'faq1.q': 'Does Recadly send messages on its own?',
       'faq1.a':
-        "That\u2019s up to you. By default Recadly only drafts — every message waits for your tap before going out. For specific topics (out-of-hours holding replies, an FAQ you\u2019re tired of typing) you can switch a rule to auto-send. Each rule is its own toggle, and you can flip back to manual any time.",
-      'faq2.q': "Will customers know they\u2019re talking to AI?",
+        'That’s up to you. By default Recadly only drafts — every message waits for your tap before going out. For specific topics (out-of-hours holding replies, an FAQ you’re tired of typing) you can switch a rule to auto-send. Each rule is its own toggle, and you can flip back to manual any time.',
+      'faq2.q': 'Will customers know they’re talking to AI?',
       'faq2.a':
-        "They\u2019re not talking to AI — they\u2019re talking to you. Recadly suggests; you write. Most customers wouldn\u2019t tell the difference between a Recadly-assisted reply and one you wrote from scratch, because in the end, you did write it.",
+        'They’re not talking to AI — they’re talking to you. Recadly suggests; you write. Most customers wouldn’t tell the difference between a Recadly-assisted reply and one you wrote from scratch, because in the end, you did write it.',
       'faq3.q': 'What does Recadly read?',
       'faq3.a':
-        "Only the DMs and post/reel comments that match the rules you set up. Recadly checks each incoming message against your topics \u2014 anything that doesn\u2019t match isn\u2019t drafted or stored. We never read your feed, your stories, your followers, or any other part of your account.",
-      'faq4.q': 'How much does it cost?',
+        'Only the DMs and post/reel comments that match the rules you set up. Recadly checks each incoming message against your topics — anything that doesn’t match isn’t drafted or stored. We never read your feed, your stories, your followers, or any other part of your account.',
+      'faq4.q': 'Is the voice note really my voice?',
       'faq4.a':
-        "During private beta, free for brands with fewer than 50,000 followers. After GA, we\u2019ll publish a clear per-seat price — no hidden message volume tiers, no surprise overage charges.",
-      'faq5.q': 'Can my team share an inbox?',
+        'It’s a clone built from a recording of you, so yes — your accent and your pace, close enough that regulars don’t notice. Two cloning services are available and you can switch between them if one doesn’t sound right. If you’d rather not use a clone at all, keep a library of notes you recorded yourself and send those instead.',
+      'faq5.q': 'What if it gets something wrong?',
       'faq5.a':
-        'Yes. Add teammates by email — each person gets their own login, their own draft history, and you can route topics to specific teammates with rules.',
-      'faq6.q': 'What about Android?',
+        'Start with everything on suggest-only — nothing leaves without your tap — and switch a topic to auto-reply once you’ve read a few dozen of its drafts and trust them. Write what it must never say into your instructions; Recadly reads that back to you and flags where it contradicts itself. And a queued reply can still be cancelled before it goes.',
+      'faq6.q': 'How much does it cost?',
       'faq6.a':
-        'iOS first, Android later this year. Add yourself to the waitlist and we\u2019ll email you when the Android beta opens.',
+        'Free during the private beta. When we start charging we’ll publish one clear price before anyone is billed — no hidden message tiers, no surprise overage.',
+      'faq7.q': 'Can I run more than one account?',
+      'faq7.a':
+        'Yes — connect several Instagram accounts and switch between them in the app. Rules, instructions and the voice profile belong to each account separately, so a second brand doesn’t inherit the first one’s tone. There is no multi-person team login yet; today Recadly is built for the person who actually answers the DMs.',
+      'faq8.q': 'What about Android?',
+      'faq8.a':
+        'iOS first, Android after. Add yourself to the waitlist and we’ll email you when the Android beta opens.',
 
       'cta.title': 'Get your evenings back.',
       'cta.sub':
@@ -277,10 +350,12 @@
     es: {
       'meta.title': 'Recadly — no vuelvas a dejar a un cliente en visto',
       'meta.description':
-        'Tú le dices a Recadly qué temas te importan. Redacta sin hacer ruido una respuesta en tu voz para cada DM o comentario de Instagram que coincida, lista para tu aprobación.',
+        'Tú le dices a Recadly qué temas te importan. Redacta la respuesta en tu voz — escrita o como nota de audio — para cada DM o comentario de Instagram que coincida, lista para tu aprobación.',
 
       'nav.features': 'Funciones',
       'nav.how': 'Cómo funciona',
+      'nav.voice': 'Notas de voz',
+      'nav.cost': 'Los números',
       'nav.privacy': 'Privacidad',
       'nav.faq': 'FAQ',
       'nav.cta': 'Únete a la lista',
@@ -289,7 +364,7 @@
       'hero.eyebrow': 'Ahora en beta privada',
       'hero.h1': 'No vuelvas a dejar a un cliente <em>en visto</em>.',
       'hero.lede':
-        'Tú le dices a Recadly qué temas te importan. Redacta sin hacer ruido una respuesta en tu voz para cada DM o comentario de Instagram que coincida — apruebas cada una, o dejas que ciertos temas se respondan solos. Tu voz siempre sigue siendo tuya.',
+        'Tú le dices a Recadly qué temas te importan. Redacta la respuesta con tu forma de escribir — o la graba con tu voz clonada — para cada DM o comentario de Instagram que coincida. Apruebas cada una, o dejas que ciertos temas se respondan solos. No sale nada que no hayas permitido.',
       'hero.placeholder': 'tu@marca.studio',
       'hero.cta': 'Únete a la lista',
       'hero.cta_done': 'Ya estás en la lista ✨',
@@ -302,19 +377,52 @@
       'bubble.out': 'Sí — hasta las 20h 🧡',
 
       'features.eyebrow': 'Qué hace Recadly',
-      'features.title': 'Tres ayudas discretas, una bandeja más tranquila.',
+      'features.title': 'Seis ayudas discretas, una bandeja más tranquila.',
       'features.sub':
-        'Cada función espera en silencio hasta que la necesitas. Nada se envía sin tu toque.',
+        'Cada una espera en silencio hasta que la necesitas. Tú decides, tema por tema, si redacta y espera — o si responde sola.',
 
       'feature1.title': 'Respuestas sugeridas',
       'feature1.body':
-        'Encima de la barra de mensaje verás dos o tres borradores que Recadly cree que encajan. Toca uno para enviarlo al campo — edítalo y envía.',
-      'feature2.title': 'Enrutado por tema',
+        'Encima de la barra de mensaje tienes borradores escritos a partir de toda la conversación reciente, no solo del último mensaje. Toca uno, cambia una palabra, envía.',
+      'feature2.title': 'Una regla por tema',
       'feature2.body':
-        'Crea reglas para tallas, envíos, devoluciones, prensa — Recadly etiqueta, redacta la respuesta correcta o la pasa a la persona indicada.',
-      'feature3.title': 'Bandeja de aprobación',
+        'Tallas, envíos, precios, prensa — cada tema tiene su regla: solo sugerir, responder sola, o responder una vez y luego sugerir. Un interruptor para cada una.',
+      'feature3.title': 'Cola de aprobación',
       'feature3.body':
-        'Todos los borradores de IA viven en un solo lugar. Aprueba, edita o salta con un gesto del pulgar. Tu voz siempre es tuya.',
+        'Todos los borradores en un sitio, agrupados por regla. Genera una sección entera de golpe, envíalo todo, o bórralo y empieza de nuevo. Trabajo de un café.',
+      'feature4.title': 'Notas de voz con tu voz',
+      'feature4.body':
+        'Clona tu voz una vez. Recadly puede responder con una nota de audio de verdad — el formato que la gente sí abre — o enviar una que grabaste antes.',
+      'feature5.title': 'Seguimiento',
+      'feature5.body':
+        'Las conversaciones que se quedan a medias son las que te cuestan dinero. Recadly las retoma, recordando lo que ya se dijo, y para en cuanto se cierran.',
+      'feature6.title': 'Un embudo que se ve',
+      'feature6.body':
+        'Cada chat lleva una etapa, etiquetada sola. La vista de embudo enseña dónde se atascan, qué palabras arrancan las buenas conversaciones y quién está a punto de comprar.',
+
+      'funnel.eyebrow': 'De seguidor a cliente',
+      'funnel.title': 'Entre el DM y la venta<br/>pasan cuatro cosas.',
+      'funnel.sub': 'Casi todas las herramientas hacen la primera. Recadly se queda para las cuatro.',
+      'funnel1.kicker': '01 · Detecta',
+      'funnel1.title': 'Ve cuáles importan',
+      'funnel1.body':
+        'DMs, comentarios en tus posts y reels, respuestas a tus historias — todo en una bandeja. Recadly compara cada uno con tus temas y etiqueta los que merecen tu tiempo.',
+      'funnel1.tag': 'Etiquetado automático',
+      'funnel2.kicker': '02 · Responde',
+      'funnel2.title': 'Contesta como contestarías tú',
+      'funnel2.body':
+        'Texto o nota de voz con tu voz clonada, redactado a partir de tus propios mensajes y de tus instrucciones. Esperando tu toque, o enviado solo — tú decides, tema por tema.',
+      'funnel2.tag': 'Tu voz',
+      'funnel3.kicker': '03 · Insiste',
+      'funnel3.title': 'No deja que se enfríen',
+      'funnel3.body':
+        'Una conversación que se apaga se retoma, con la memoria de lo que ya se habló. Cuando se cierra — ganada o perdida — Recadly para, y para de verdad.',
+      'funnel3.tag': 'Seguimiento',
+      'funnel4.kicker': '04 · Te lo enseña',
+      'funnel4.title': 'Te dice por dónde se escapa el dinero',
+      'funnel4.body':
+        'Un embudo en vivo desde el primer mensaje hasta el cierre, puntuación de intención de compra en la bandeja, y la objeción que se repite. Sin hojas de cálculo.',
+      'funnel4.tag': 'Analítica',
 
       'spotlight.eyebrow': 'La conversación',
       'spotlight.title': 'La app de mensajería que ya conoces,<br/>con un copiloto más tranquilo.',
@@ -329,21 +437,53 @@
       'point3.body':
         'Un toque coloca el borrador en el campo. Cambia una palabra, ajusta el emoji, envía cuando estés segura. Nada sale a tus espaldas.',
 
+      'voice.eyebrow': 'Tu voz de verdad',
+      'voice.title': 'La respuesta que abren primero<br/>es la que pueden escuchar.',
+      'voice.lede':
+        'Grábate un minuto una sola vez. A partir de ahí Recadly puede responder en audio — tu acento, tu ritmo, tu forma de dejar la frase a medias.',
+      'voice.caption': 'Se envía como una nota de audio real de Instagram — no un enlace, no un archivo.',
+      'voice.p1':
+        '<strong>Dos servicios de clonado a elegir.</strong> Si uno no suena a ti, cambias al otro desde la app — misma pantalla, sin volver a montar nada.',
+      'voice.p2':
+        '<strong>O guarda una biblioteca de notas reales.</strong> Graba una vez las respuestas que das cada semana y suelta la que toca en un toque. Nada sintético.',
+      'voice.p3':
+        '<strong>Tú la escuchas antes que ellos.</strong> Las notas de voz pasan por la misma cola de aprobación que el texto. La escuchas, la guardas o la tiras, y envías.',
+
       'how.eyebrow': 'Cómo funciona',
-      'how.title': 'Tres minutos para configurarlo.<br/>Horas recuperadas cada semana.',
+      'how.title': 'Una tarde para configurarlo.<br/>Horas recuperadas cada semana.',
 
       'step1.kicker': 'PASO 01',
       'step1.title': 'Conecta Instagram',
       'step1.body':
         'A través de la API oficial de Meta. Nunca tocamos tu contraseña y puedes desconectarte cuando quieras desde ajustes.',
       'step2.kicker': 'PASO 02',
-      'step2.title': 'Enséñale tu voz',
+      'step2.title': 'Aprende de tus propias respuestas',
       'step2.body':
-        'Recadly estudia tus últimas 50 respuestas enviadas para captar tu tono — tus emojis, tu calidez, tu humor.',
+        'Sin cuestionarios. Recadly lee los mensajes que escribiste tú misma — hasta 400 — y arma una guía de estilo con tus emojis, tu calidez, tu humor. Se actualiza sola a medida que sigues escribiendo.',
       'step3.kicker': 'PASO 03',
-      'step3.title': 'Aprueba, envía, repite',
+      'step3.title': 'Di lo que nunca dirías',
       'step3.body':
-        'Abre una conversación, toca el borrador que te guste, envía. O ve por todos juntos en la bandeja de aprobación con el café de la mañana.',
+        'Escribe tus reglas en lenguaje normal — precios, qué hay en stock, qué no prometer jamás. Recadly te lo lee de vuelta, te señala dónde se contradice y te propone una versión más limpia.',
+      'step4.kicker': 'PASO 04',
+      'step4.title': 'Aprueba, envía, repite',
+      'step4.body':
+        'Abre una conversación y toca el borrador que te guste. O vacía la cola entera con el café de la mañana. Los temas en los que confías dejan de preguntar.',
+
+      'cost.eyebrow': 'Coste de oportunidad · un cliente no vale una venta',
+      'cost.title': 'Esto es lo que se te<br/>está escapando.',
+      'cost.sub':
+        'Un cliente que no llega no te cuesta un ticket. Te cuesta ese ticket por cada mes que se habría quedado. Mueve los deslizadores.',
+      'cost.dms': 'DMs sin responder a la semana',
+      'cost.dms_unit': 'mensajes',
+      'cost.ticket': 'Lo que te paga un cliente, de media',
+      'cost.ticket_unit': 'al mes',
+      'cost.months': 'Cuánto se te queda un cliente',
+      'cost.months_unit': 'meses',
+      'cost.result': 'Facturación que nunca llega',
+      'cost.formula':
+        'Por cada mes que sigue así: <b>{customers}</b> clientes × <b>{ticket}</b> × <b>{months}</b> meses.',
+      'cost.note':
+        'Asume que el 5% de los DMs sin responder habrían acabado siendo clientes. Cambia los números por los tuyos — la cuenta está a la vista.',
 
       'origin.mark': 'Por qué "Recadly"',
       'origin.quote':
@@ -358,12 +498,12 @@
       'trust1.title': 'Cifrado en tránsito y en reposo',
       'trust1.body':
         'TLS 1.3 entre tu teléfono y nuestros servidores. AES-256 en disco. Los mismos protocolos que usa tu banco.',
-      'trust2.title': 'Tus mensajes son tuyos',
+      'trust2.title': 'Borrar es borrar',
       'trust2.body':
-        'Exporta todo como JSON cuando quieras. Borra tu cuenta y la eliminamos en 30 días — sin correos de seguimiento.',
-      'trust3.title': 'Los borradores caducan',
+        'Pide la eliminación desde la app y desaparece cada fila ligada a tu cuenta — conversaciones, mensajes, borradores, perfil de voz. No marcada como oculta. Borrada.',
+      'trust3.title': 'Los eventos en bruto no se acumulan',
       'trust3.body':
-        'Los borradores de IA no enviados desaparecen tras 7 días. Sin archivos guardados con los problemas de tus clientes dentro.',
+        'Una vez procesado un mensaje entrante, el evento en bruto que nos mandó Meta se elimina a los 30 días. Guardamos la conversación que ves en la app, no una segunda copia en la sombra.',
       'trust4.title': 'Desconecta con un toque',
       'trust4.body':
         'Revoca el acceso desde ajustes. Recadly deja de leer, redactar y guardar cualquier cosa nueva — al instante.',
@@ -380,15 +520,21 @@
       'faq3.q': '¿Qué lee Recadly?',
       'faq3.a':
         'Solo los DMs y comentarios en posts y reels que coincidan con las reglas que configures. Recadly compara cada mensaje entrante con tus temas — lo que no coincide, no se redacta ni se guarda. Nunca leemos tu feed, tus historias, tus seguidores ni ninguna otra parte de tu cuenta.',
-      'faq4.q': '¿Cuánto cuesta?',
+      'faq4.q': '¿La nota de voz es de verdad mi voz?',
       'faq4.a':
-        'Durante la beta privada, gratis para marcas con menos de 50.000 seguidores. Tras el lanzamiento general publicaremos un precio claro por usuario — sin niveles ocultos de volumen ni cargos sorpresa.',
-      'faq5.q': '¿Puede mi equipo compartir una bandeja?',
+        'Es un clon hecho a partir de una grabación tuya, así que sí — tu acento y tu ritmo, lo bastante cerca como para que quien te sigue no lo note. Hay dos servicios de clonado y puedes cambiar de uno a otro si alguno no te suena bien. Y si prefieres no usar clon, guarda una biblioteca de notas grabadas por ti y envía esas.',
+      'faq5.q': '¿Y si se equivoca en algo?',
       'faq5.a':
-        'Sí. Añade a tu equipo por correo — cada persona tiene su propio acceso, su propio historial de borradores y puedes enviar temas a personas concretas con reglas.',
-      'faq6.q': '¿Y Android?',
+        'Empieza con todo en modo sugerencia — no sale nada sin tu toque — y pasa un tema a respuesta automática cuando hayas leído unas cuantas decenas de sus borradores y te fíes. Escribe en tus instrucciones lo que no debe decir jamás; Recadly te las lee de vuelta y te marca dónde se contradicen. Y una respuesta en cola todavía se puede cancelar antes de que salga.',
+      'faq6.q': '¿Cuánto cuesta?',
       'faq6.a':
-        'Primero iOS, Android más adelante este año. Apúntate a la lista y te avisaremos cuando se abra el beta de Android.',
+        'Gratis durante la beta privada. Cuando empecemos a cobrar publicaremos un precio claro antes de facturarle nada a nadie — sin niveles ocultos de volumen ni cargos sorpresa.',
+      'faq7.q': '¿Puedo llevar más de una cuenta?',
+      'faq7.a':
+        'Sí — conecta varias cuentas de Instagram y cambia entre ellas en la app. Las reglas, las instrucciones y el perfil de voz son de cada cuenta por separado, así que una segunda marca no hereda el tono de la primera. Todavía no hay acceso de equipo con varias personas: hoy Recadly está hecha para quien realmente contesta los DMs.',
+      'faq8.q': '¿Y Android?',
+      'faq8.a':
+        'Primero iOS, Android después. Apúntate a la lista y te avisaremos cuando se abra el beta de Android.',
 
       'cta.title': 'Recupera tus tardes.',
       'cta.sub':
@@ -539,19 +685,21 @@
     pt: {
       'meta.title': 'Recadly — nunca mais deixe um cliente no vácuo',
       'meta.description':
-        'Você diz ao Recadly quais tópicos importam. Ele rascunha sem barulho uma resposta na sua voz para cada DM ou comentário do Instagram que combinar, pronta pra sua aprovação.',
+        'Você diz ao Recadly quais assuntos importam. Ele escreve a resposta na sua voz — em texto ou como áudio — para cada DM ou comentário do Instagram que combinar, pronta para você aprovar.',
 
-      'nav.features': 'Funcionalidades',
+      'nav.features': 'Recursos',
       'nav.how': 'Como funciona',
+      'nav.voice': 'Áudios',
+      'nav.cost': 'A conta',
       'nav.privacy': 'Privacidade',
       'nav.faq': 'Perguntas',
       'nav.cta': 'Entrar na lista',
       'picker.label': 'Idioma',
 
-      'hero.eyebrow': 'Em beta privado',
+      'hero.eyebrow': 'Agora em beta privado',
       'hero.h1': 'Nunca mais deixe um cliente <em>no vácuo</em>.',
       'hero.lede':
-        'Você diz ao Recadly quais tópicos importam. Ele rascunha sem barulho uma resposta na sua voz para cada DM ou comentário do Instagram que combinar — você aprova cada uma, ou deixa que tópicos confiáveis se respondam sozinhos. A voz continua sendo a sua.',
+        'Você diz ao Recadly quais assuntos importam. Ele escreve a resposta do seu jeito — ou grava com a sua voz clonada — para cada DM ou comentário do Instagram que combinar. Você aprova uma a uma, ou deixa os assuntos de confiança se resolverem sozinhos. Nada sai sem você ter permitido.',
       'hero.placeholder': 'voce@marca.studio',
       'hero.cta': 'Entrar na lista',
       'hero.cta_done': 'Você está na lista ✨',
@@ -561,96 +709,167 @@
       'carousel.approvals': 'Aprove respostas em segundos',
 
       'bubble.in': 'Vocês abrem hoje? 🥺',
-      'bubble.out': 'Sim — até as 20h 🧡',
+      'bubble.out': 'Abrimos — até as 20h 🧡',
 
       'features.eyebrow': 'O que o Recadly faz',
-      'features.title': 'Três ajudas discretas, uma caixa mais tranquila.',
+      'features.title': 'Seis ajudas discretas, uma caixa mais calma.',
       'features.sub':
-        'Cada função fica fora do caminho até você precisar. Nada é enviado sem o seu toque.',
+        'Cada uma fica fora do caminho até você precisar. Você decide, assunto por assunto, se ela escreve e espera — ou se responde sozinha.',
 
       'feature1.title': 'Respostas sugeridas',
       'feature1.body':
-        'Acima da barra de mensagem você vê dois ou três rascunhos que o Recadly acha que combinam. Toque em um para soltar no campo — edite e envie.',
-      'feature2.title': 'Roteamento por tópico',
+        'Acima da barra de digitação aparecem rascunhos escritos a partir da conversa recente inteira, não só da última mensagem. Toque em um, ajuste uma palavra, envie.',
+      'feature2.title': 'Uma regra por assunto',
       'feature2.body':
-        'Crie regras para tamanhos, frete, trocas, imprensa — o Recadly marca, rascunha a resposta certa, ou encaminha para a pessoa certa.',
-      'feature3.title': 'Caixa de aprovação',
+        'Tamanhos, frete, preços, imprensa — cada assunto tem sua regra: só sugerir, responder sozinho, ou responder uma vez e depois sugerir. Um botão para cada.',
+      'feature3.title': 'Fila de aprovação',
       'feature3.body':
-        'Todo rascunho da IA fica em um só lugar. Aprove, edite ou pule com um deslizar do polegar. Sua voz sempre continua sua.',
+        'Todos os rascunhos num lugar só, agrupados por regra. Gere uma seção inteira de uma vez, envie tudo, ou limpe e comece de novo. Trabalho de um café.',
+      'feature4.title': 'Áudios com a sua voz',
+      'feature4.body':
+        'Clone sua voz uma vez. O Recadly pode responder com um áudio de verdade — o formato que as pessoas realmente abrem — ou mandar um que você gravou antes.',
+      'feature5.title': 'Follow-up que acontece',
+      'feature5.body':
+        'As conversas que esfriam são as que custam dinheiro. O Recadly retoma o assunto, lembrando do que já foi dito, e para no instante em que a conversa fecha.',
+      'feature6.title': 'Um funil que dá para ver',
+      'feature6.body':
+        'Cada conversa carrega um estágio, marcado sozinho. A visão de funil mostra onde elas travam, quais palavras começam as boas conversas e quem está perto de comprar.',
+
+      'funnel.eyebrow': 'De seguidor a cliente',
+      'funnel.title': 'Entre o DM e a venda<br/>acontecem quatro coisas.',
+      'funnel.sub': 'Quase toda ferramenta faz a primeira. O Recadly fica para as quatro.',
+      'funnel1.kicker': '01 · Percebe',
+      'funnel1.title': 'Enxerga quais importam',
+      'funnel1.body':
+        'DMs, comentários nos seus posts e reels, respostas aos seus stories — tudo numa caixa só. O Recadly compara cada um com os seus assuntos e marca os que valem o seu tempo.',
+      'funnel1.tag': 'Marcação automática',
+      'funnel2.kicker': '02 · Responde',
+      'funnel2.title': 'Responde do jeito que você responderia',
+      'funnel2.body':
+        'Texto ou áudio com a sua voz clonada, escrito a partir das suas próprias mensagens e das suas instruções. Esperando o seu toque, ou enviado sozinho — você escolhe, assunto por assunto.',
+      'funnel2.tag': 'Sua voz',
+      'funnel3.kicker': '03 · Insiste',
+      'funnel3.title': 'Não deixa esfriar',
+      'funnel3.body':
+        'Uma conversa que para é retomada, com a memória do que já foi falado. Quando fecha — ganha ou perdida — o Recadly para, e para de vez.',
+      'funnel3.tag': 'Follow-up',
+      'funnel4.kicker': '04 · Te mostra',
+      'funnel4.title': 'Te diz por onde o dinheiro vaza',
+      'funnel4.body':
+        'Um funil ao vivo da primeira mensagem até o fechamento, nota de intenção de compra nas linhas da caixa, e a objeção que sempre volta. Sem planilha.',
+      'funnel4.tag': 'Análises',
 
       'spotlight.eyebrow': 'A conversa',
-      'spotlight.title': 'Um app de mensagens que você já conhece,<br/>com um copiloto mais tranquilo.',
+      'spotlight.title': 'O app de mensagens que você já conhece,<br/>com um copiloto mais calmo.',
 
       'point1.title': 'O Recadly percebe a pergunta',
       'point1.body':
-        'Uma pequena dica coral aparece sob a última mensagem do cliente — "percebi uma pergunta sobre frete e trocas". Sem tomar conta, sem voz de chatbot.',
+        'Uma dica coral discreta aparece embaixo da última mensagem do cliente — "notei uma pergunta sobre frete e devoluções". Sem assumir o controle, sem voz de chatbot.',
       'point2.title': 'Três rascunhos esperam acima do campo',
       'point2.body':
-        'Respostas prontas para tocar — curtas, calorosas, no seu tom. A primeira costuma estar certa. As outras te dão variações.',
+        'Respostas prontas para tocar — curtas, calorosas, no seu tom. A primeira costuma acertar. As outras dão variações.',
       'point3.title': 'Toque → edite → envie',
       'point3.body':
-        'Um toque solta o rascunho no campo. Mude uma palavra, troque o emoji, envie quando estiver pronta. Nada sai pelas suas costas.',
+        'Um toque coloca o rascunho no campo. Mude uma palavra, troque o emoji, envie quando quiser. Nada sai pelas suas costas.',
+
+      'voice.eyebrow': 'A sua voz mesmo',
+      'voice.title': 'A resposta que abrem primeiro<br/>é a que dá para ouvir.',
+      'voice.lede':
+        'Grave cerca de um minuto de você uma única vez. A partir daí o Recadly responde em áudio — seu sotaque, seu ritmo, seu jeito de deixar a frase morrendo no fim.',
+      'voice.caption': 'Enviado como áudio de verdade do Instagram — não é link, não é arquivo.',
+      'voice.p1':
+        '<strong>Dois serviços de clonagem à escolha.</strong> Se um não soar como você, troque pelo outro dentro do app — mesma tela, sem refazer nada.',
+      'voice.p2':
+        '<strong>Ou monte uma biblioteca de áudios reais.</strong> Grave uma vez as respostas que você dá toda semana e solte a certa na conversa com um toque. Nada sintético.',
+      'voice.p3':
+        '<strong>Você ouve antes deles.</strong> Os áudios passam pela mesma fila de aprovação que o texto. Escute, guarde ou descarte, e envie.',
 
       'how.eyebrow': 'Como funciona',
-      'how.title': 'Três minutos para configurar.<br/>Horas de volta toda semana.',
+      'how.title': 'Uma tarde para configurar.<br/>Horas de volta toda semana.',
 
       'step1.kicker': 'PASSO 01',
       'step1.title': 'Conecte o Instagram',
       'step1.body':
         'Pela API oficial da Meta. A gente nunca toca na sua senha, e você pode desconectar quando quiser nas configurações.',
       'step2.kicker': 'PASSO 02',
-      'step2.title': 'Ensine a sua voz',
+      'step2.title': 'Ele aprende com as suas respostas',
       'step2.body':
-        'O Recadly estuda suas últimas 50 respostas enviadas para captar o seu tom — seus emojis, seu carinho, seu humor.',
+        'Sem questionário. O Recadly lê as mensagens que você mesma digitou — até 400 delas — e monta um guia de estilo com os seus emojis, o seu calor, o seu humor. E se atualiza sozinho conforme você continua escrevendo.',
       'step3.kicker': 'PASSO 03',
-      'step3.title': 'Aprove, envie, repita',
+      'step3.title': 'Diga o que você nunca diria',
       'step3.body':
-        'Abra uma conversa, toque no rascunho que gostou, envie. Ou passe por todos de uma vez na caixa de aprovação com o café da manhã.',
+        'Escreva as suas regras em linguagem normal — preços, o que tem em estoque, o que nunca prometer. O Recadly lê de volta para você, aponta onde o texto se contradiz e propõe uma versão mais limpa.',
+      'step4.kicker': 'PASSO 04',
+      'step4.title': 'Aprove, envie, repita',
+      'step4.body':
+        'Abra uma conversa e toque no rascunho que você gostou. Ou esvazie a fila inteira no café da manhã. Os assuntos em que você confia param de perguntar.',
+
+      'cost.eyebrow': 'Custo de oportunidade · um cliente não é uma venda',
+      'cost.title': 'É isto que está saindo<br/>pela porta sem você ver.',
+      'cost.sub':
+        'Um cliente que não chega não custa um ticket. Custa aquele ticket por cada mês que ele teria ficado. Mexa nos controles.',
+      'cost.dms': 'DMs que você deixa sem resposta por semana',
+      'cost.dms_unit': 'mensagens',
+      'cost.ticket': 'Quanto um cliente paga, em média',
+      'cost.ticket_unit': 'por mês',
+      'cost.months': 'Quanto tempo um cliente costuma ficar',
+      'cost.months_unit': 'meses',
+      'cost.result': 'Faturamento que nunca chega',
+      'cost.formula':
+        'A cada mês que continua assim: <b>{customers}</b> clientes × <b>{ticket}</b> × <b>{months}</b> meses.',
+      'cost.note':
+        'Considera que 5% dos DMs sem resposta teriam virado clientes. Troque pelos seus números — a conta está ali à vista.',
 
       'origin.mark': 'Por que "Recadly"',
       'origin.quote':
-        'Em português, <em>"deixar um recado"</em> é deixar uma mensagem para alguém — calorosa, pessoal, do jeito que uma amiga faria. Seus clientes merecem esse tipo de resposta.',
-      'origin.foot': 're·ca·do · /ʁɨˈkadu/ · subst. um recado deixado com carinho',
+        'Em português, <em>"deixar um recado"</em> é deixar uma mensagem para alguém — caloroso, pessoal, coisa que uma amiga faria. Seus clientes merecem esse tipo de resposta.',
+      'origin.foot': 're·ca·do · /ʁɨˈkadu/ · s.m. uma mensagem deixada com carinho',
 
       'trust.eyebrow': 'Privacidade por padrão',
-      'trust.title': 'As mensagens dos seus clientes não são dados de treinamento.',
+      'trust.title': 'As mensagens dos seus clientes não são dados de treino.',
       'trust.sub':
-        'O Recadly só lê as mensagens que combinam com as regras que você configurar — nada além disso. A gente não vende, não treina, nem compartilha nada.',
+        'O Recadly só lê as mensagens que combinam com as regras que você configura — nada além disso. A gente não vende, não treina e não compartilha nada.',
 
       'trust1.title': 'Criptografado em trânsito e em repouso',
       'trust1.body':
-        'TLS 1.3 entre seu celular e nossos servidores. AES-256 em disco. Os mesmos protocolos que o seu banco usa.',
-      'trust2.title': 'Suas mensagens são suas',
+        'TLS 1.3 entre o seu telefone e os nossos servidores. AES-256 em disco. Os mesmos protocolos que o seu banco usa.',
+      'trust2.title': 'Apagar é apagar',
       'trust2.body':
-        'Exporte tudo em JSON quando quiser. Apague sua conta e a gente apaga tudo em até 30 dias — sem e-mails de retorno.',
-      'trust3.title': 'Os rascunhos expiram',
+        'Peça a exclusão dentro do app e some cada linha ligada à sua conta — conversas, mensagens, rascunhos, perfil de voz. Não marcada como oculta. Apagada.',
+      'trust3.title': 'Evento bruto não se acumula',
       'trust3.body':
-        'Rascunhos da IA não enviados somem após 7 dias. Sem arquivo parado num banco de dados com os problemas dos seus clientes dentro.',
+        'Depois que uma mensagem recebida é processada, o evento bruto que a Meta nos mandou é descartado em 30 dias. A gente guarda a conversa que você vê no app, não uma segunda cópia na sombra.',
       'trust4.title': 'Desconecte com um toque',
       'trust4.body':
-        'Revogue o acesso nas configurações. O Recadly para de ler, rascunhar e guardar qualquer coisa nova — na hora.',
+        'Revogue o acesso nas configurações. O Recadly para de ler, de escrever e de guardar qualquer coisa nova — na hora.',
 
       'faq.eyebrow': 'Respostas honestas',
       'faq.title': 'O que as pessoas perguntam antes de entrar.',
 
       'faq1.q': 'O Recadly envia mensagens sozinho?',
       'faq1.a':
-        'Você decide. Por padrão o Recadly só rascunha — cada mensagem espera o seu toque para sair. Para tópicos específicos (respostas fora de horário, uma pergunta frequente que você está cansada de digitar) dá pra ligar o envio automático em uma regra. Cada regra é um botão e você volta pro manual quando quiser.',
+        'Você decide. Por padrão o Recadly só escreve — cada mensagem espera o seu toque antes de sair. Para assuntos específicos (respostas fora do horário, uma pergunta que você cansou de digitar) dá para ligar o envio automático numa regra. Cada regra tem seu próprio botão, e você volta para o manual quando quiser.',
       'faq2.q': 'Meus clientes vão saber que estão falando com IA?',
       'faq2.a':
-        'Eles não estão falando com IA — estão falando com você. O Recadly sugere; você escreve. A maioria dos clientes não saberia distinguir uma resposta assistida pelo Recadly de uma que você escreveu do zero, porque, no fim, foi você que escreveu.',
+        'Eles não estão falando com uma IA — estão falando com você. O Recadly sugere; você escreve. A maioria não perceberia a diferença entre uma resposta assistida pelo Recadly e uma escrita do zero, porque no fim das contas, você escreveu.',
       'faq3.q': 'O que o Recadly lê?',
       'faq3.a':
-        'Só as DMs e comentários em posts e reels que combinam com as regras que você configurar. O Recadly compara cada mensagem que chega com seus tópicos — o que não combina não vira rascunho nem fica guardado. Nunca lemos o seu feed, seus stories, seus seguidores nem qualquer outra parte da sua conta.',
-      'faq4.q': 'Quanto custa?',
+        'Só os DMs e comentários em posts e reels que combinem com as regras que você configurar. O Recadly compara cada mensagem recebida com os seus assuntos — o que não combina não é escrito nem guardado. A gente nunca lê o seu feed, seus stories, seus seguidores nem qualquer outra parte da sua conta.',
+      'faq4.q': 'O áudio é mesmo a minha voz?',
       'faq4.a':
-        'Durante o beta privado, grátis para marcas com menos de 50.000 seguidores. Após o lançamento geral, vamos publicar um preço por usuário claro — sem faixas escondidas de volume nem cobranças surpresa.',
-      'faq5.q': 'Minha equipe pode compartilhar uma caixa?',
+        'É um clone feito a partir de uma gravação sua, então sim — seu sotaque e seu ritmo, perto o bastante para quem te acompanha não notar. Há dois serviços de clonagem e você pode trocar de um para o outro se algum não soar bem. E se preferir não usar clone, monte uma biblioteca de áudios gravados por você e mande esses.',
+      'faq5.q': 'E se ele errar alguma coisa?',
       'faq5.a':
-        'Sim. Adicione colegas pelo e-mail — cada um tem o próprio login, o próprio histórico de rascunhos, e dá pra encaminhar tópicos para pessoas específicas com regras.',
-      'faq6.q': 'E o Android?',
+        'Comece com tudo em modo sugestão — nada sai sem o seu toque — e passe um assunto para resposta automática depois de ler algumas dezenas de rascunhos dele e confiar. Escreva nas suas instruções o que ele nunca deve dizer; o Recadly lê isso de volta para você e aponta onde o texto se contradiz. E uma resposta na fila ainda pode ser cancelada antes de sair.',
+      'faq6.q': 'Quanto custa?',
       'faq6.a':
-        'Primeiro iOS, Android ainda este ano. Entre na lista e a gente te avisa quando o beta do Android abrir.',
+        'Grátis durante o beta privado. Quando a gente começar a cobrar, vai publicar um preço claro antes de faturar de alguém — sem faixas escondidas de volume, sem cobrança surpresa.',
+      'faq7.q': 'Dá para usar mais de uma conta?',
+      'faq7.a':
+        'Dá — conecte várias contas do Instagram e alterne entre elas no app. Regras, instruções e perfil de voz são de cada conta separadamente, então uma segunda marca não herda o tom da primeira. Ainda não existe login de equipe com várias pessoas: hoje o Recadly é feito para quem de fato responde os DMs.',
+      'faq8.q': 'E o Android?',
+      'faq8.a':
+        'Primeiro iOS, Android depois. Entre na lista e a gente te avisa quando o beta de Android abrir.',
 
       'cta.title': 'Recupere as suas noites.',
       'cta.sub':

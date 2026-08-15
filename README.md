@@ -7,13 +7,14 @@ Marketing site and legal pages for [recadly.com](https://recadly.com).
 A static landing page (built from a Claude Design handoff) plus the legal
 pages Meta App Review requires. The landing page renders the iOS app mockups
 with React + Babel **in the browser** — there is no build step. `server.js` is
-a thin Express static server so it can run as a Node.js web app on Hostinger.
+a thin dependency-free node:http server so it can run as a Node.js web app on
+Hostinger.
 
 ## Structure
 
 ```
-server.js          Express static server (entry point)
-package.json       start script + express dependency
+server.js          node:http static server (entry point)
+package.json       start script (no dependencies)
 public/
   index.html       landing page
   privacy.html     Privacy Policy        -> recadly.com/privacy
