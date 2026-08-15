@@ -546,29 +546,33 @@ img { display: block; max-width: 100%; }
   background: var(--coral); border: 3px solid #fff;
   box-shadow: 0 3px 10px var(--coral-ring);
 }
+/* Glow is a %-sized ellipse painted on the panel itself. It used to be a
+   ::before with `radial-gradient(circle, …)`: on a tall narrow box the
+   circle's farthest-corner radius is large enough that the gradient is
+   still opaque where the pseudo-element's own edge falls, so it ended in
+   a hard vertical line down the panel. An explicit %-sized ellipse is
+   measured against this box, so it always finishes fading inside it. */
 .calc-out {
-  background: var(--ink); color: #fff; border-color: var(--ink);
+  background:
+    radial-gradient(72% 44% at 82% 14%, rgba(255,111,97,0.38), transparent 72%),
+    var(--ink);
+  color: #fff; border-color: var(--ink);
   display: flex; flex-direction: column; justify-content: center;
-  text-align: center; position: relative; overflow: hidden;
-}
-.calc-out::before {
-  content: ''; position: absolute; inset: -30% -20% auto auto;
-  width: 70%; height: 200%;
-  background: radial-gradient(circle, rgba(255,111,97,0.35), transparent 60%);
+  text-align: center;
 }
 .calc-out-label {
-  position: relative; font-size: 12px; font-weight: 800;
+  font-size: 12px; font-weight: 800;
   letter-spacing: 0.14em; text-transform: uppercase;
   color: rgba(255,255,255,0.62);
 }
 .calc-total {
-  position: relative; margin: 12px 0 0;
+  margin: 12px 0 0;
   font-size: clamp(40px, 7vw, 64px); font-weight: 800;
   letter-spacing: -0.03em; line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 .calc-formula {
-  position: relative; margin: 18px auto 0; max-width: 320px;
+  margin: 18px auto 0; max-width: 320px;
   font-size: 14px; line-height: 1.55; color: rgba(255,255,255,0.72);
 }
 .calc-formula b { color: #fff; font-weight: 800; }
