@@ -196,7 +196,7 @@
         'Free during the private beta. When we start charging we’ll publish one clear price before anyone is billed — no hidden message tiers, no surprise overage.',
       'faq7.q': 'Can I run more than one account?',
       'faq7.a':
-        'Yes — connect several Instagram accounts and switch between them in the app. Rules, instructions and the voice profile belong to each account separately, so a second brand doesn’t inherit the first one’s tone. There is no multi-person team login yet; today Recadly is built for the person who actually answers the DMs.',
+        'Yes — connect several Instagram accounts and switch between them in the app. Rules, instructions and the voice profile belong to each account separately, so a second brand doesn’t inherit the first one’s tone. More than one person can share an account too: send a teammate an invite code from the account where Instagram was connected, they sign in with Apple and enter it. Everyone on an account has full access for now.',
       'faq8.q': 'What about Android?',
       'faq8.a':
         'iOS first, Android after. Add yourself to the waitlist and we’ll email you when the Android beta opens.',
@@ -247,6 +247,7 @@
       'privacy.p.what.intro': 'When you connect an Instagram professional account, and as you use Recadly, we process:',
       'privacy.p.what.account': '<strong>Instagram account information</strong> — the account\'s ID, username, and basic profile details provided by Instagram.',
       'privacy.p.what.token': '<strong>Access tokens</strong> — a secure token issued by Instagram that lets Recadly act on the connected account\'s behalf.',
+      'privacy.p.what.identity': '<strong>Sign-in identity</strong> — when you sign in with Apple, the user identifier Apple gives us for Recadly, plus the name and email address you choose to share (Apple\'s private relay address counts). Used only to know who you are across devices and which connected accounts you may open.',
       'privacy.p.what.dm': '<strong>Direct message and comment content</strong> — the text and metadata of direct messages and post/reel comments sent to and from the connected account, including messages from the people who contact that account.',
       'privacy.p.what.rules': '<strong>Automation rules</strong> — keyword and topic routing rules the user creates.',
       'privacy.p.what.drafts': '<strong>Drafted replies</strong> — AI-generated reply drafts awaiting the user\'s approval.',
@@ -274,7 +275,7 @@
       'privacy.h.rights': '10. Your rights',
       'privacy.p.rights': 'Under the GDPR you have the right to access, correct, export, and delete your personal data, and to object to or restrict its processing. To exercise these rights, contact <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>. You may also lodge a complaint with the Spanish Data Protection Agency (AEPD).',
       'privacy.h.deletion': '11. Data deletion',
-      'privacy.p.deletion': 'You can disconnect your Instagram account in Recadly at any time, which revokes Recadly\'s access and deletes the stored access token. To request full deletion of all stored data, see <a href="data-deletion.html">recadly.com/data-deletion</a> or email <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.',
+      'privacy.p.deletion': 'You can disconnect your Instagram account in Recadly at any time, which revokes Recadly\'s access and deletes the stored access token. You can also delete your Recadly user account from Account settings — that removes your sign-in identity, and any Instagram account where you were the only member is disconnected and deleted with it. To request full deletion of all stored data, see <a href="data-deletion.html">recadly.com/data-deletion</a> or email <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.',
       'privacy.h.security': '12. Security',
       'privacy.p.security': 'Access tokens and message data are stored in our EU-hosted database with restricted access. Access to backend systems is limited to authorised operators.',
       'privacy.h.children': '13. Children',
@@ -531,7 +532,7 @@
         'Gratis durante la beta privada. Cuando empecemos a cobrar publicaremos un precio claro antes de facturarle nada a nadie — sin niveles ocultos de volumen ni cargos sorpresa.',
       'faq7.q': '¿Puedo llevar más de una cuenta?',
       'faq7.a':
-        'Sí — conecta varias cuentas de Instagram y cambia entre ellas en la app. Las reglas, las instrucciones y el perfil de voz son de cada cuenta por separado, así que una segunda marca no hereda el tono de la primera. Todavía no hay acceso de equipo con varias personas: hoy Recadly está hecha para quien realmente contesta los DMs.',
+        'Sí — conecta varias cuentas de Instagram y cambia entre ellas en la app. Las reglas, las instrucciones y el perfil de voz son de cada cuenta por separado, así que una segunda marca no hereda el tono de la primera. Y varias personas pueden compartir una cuenta: desde la cuenta donde conectaste Instagram le mandas un código de invitación a tu compañera, ella inicia sesión con Apple y lo introduce. Por ahora todas las personas de una cuenta tienen acceso completo.',
       'faq8.q': '¿Y Android?',
       'faq8.a':
         'Primero iOS, Android después. Apúntate a la lista y te avisaremos cuando se abra el beta de Android.',
@@ -582,6 +583,7 @@
       'privacy.p.what.intro': 'Cuando conectas una cuenta profesional de Instagram y mientras usas Recadly, tratamos:',
       'privacy.p.what.account': '<strong>Información de la cuenta de Instagram</strong> — el ID de la cuenta, nombre de usuario y datos básicos del perfil proporcionados por Instagram.',
       'privacy.p.what.token': '<strong>Tokens de acceso</strong> — un token seguro emitido por Instagram que permite a Recadly actuar en nombre de la cuenta conectada.',
+      'privacy.p.what.identity': '<strong>Identidad de acceso</strong> — cuando inicias sesión con Apple, el identificador de usuario que Apple nos da para Recadly, más el nombre y el correo que elijas compartir (incluida la dirección de reenvío privada de Apple). Solo se usa para saber quién eres entre dispositivos y a qué cuentas conectadas puedes entrar.',
       'privacy.p.what.dm': '<strong>Contenido de mensajes directos y comentarios</strong> — el texto y los metadatos de los mensajes directos y los comentarios de publicaciones/reels enviados desde y hacia la cuenta conectada, incluidos los mensajes de las personas que contactan a esa cuenta.',
       'privacy.p.what.rules': '<strong>Reglas de automatización</strong> — reglas de palabras clave y temas que el usuario crea.',
       'privacy.p.what.drafts': '<strong>Borradores de respuestas</strong> — borradores generados por IA pendientes de la aprobación del usuario.',
@@ -609,7 +611,7 @@
       'privacy.h.rights': '10. Tus derechos',
       'privacy.p.rights': 'Conforme al RGPD tienes derecho a acceder, rectificar, exportar y eliminar tus datos personales, y a oponerte o limitar su tratamiento. Para ejercerlos, contacta con <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).',
       'privacy.h.deletion': '11. Eliminación de datos',
-      'privacy.p.deletion': 'Puedes desconectar tu cuenta de Instagram en Recadly en cualquier momento, lo que revoca el acceso de Recadly y elimina el token de acceso almacenado. Para solicitar la eliminación completa de todos los datos almacenados, consulta <a href="data-deletion.html">recadly.com/data-deletion</a> o escribe a <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.',
+      'privacy.p.deletion': 'Puedes desconectar tu cuenta de Instagram en Recadly en cualquier momento, lo que revoca el acceso de Recadly y elimina el token de acceso almacenado. También puedes eliminar tu cuenta de usuario de Recadly desde los ajustes de Cuenta: eso borra tu identidad de acceso, y cualquier cuenta de Instagram en la que fueras la única persona se desconecta y se elimina con ella. Para solicitar la eliminación completa de todos los datos almacenados, consulta <a href="data-deletion.html">recadly.com/data-deletion</a> o escribe a <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.',
       'privacy.h.security': '12. Seguridad',
       'privacy.p.security': 'Los tokens de acceso y los datos de los mensajes se almacenan en nuestra base de datos alojada en la UE con acceso restringido. El acceso a los sistemas backend está limitado a operadores autorizados.',
       'privacy.h.children': '13. Menores',
@@ -866,7 +868,7 @@
         'Grátis durante o beta privado. Quando a gente começar a cobrar, vai publicar um preço claro antes de faturar de alguém — sem faixas escondidas de volume, sem cobrança surpresa.',
       'faq7.q': 'Dá para usar mais de uma conta?',
       'faq7.a':
-        'Dá — conecte várias contas do Instagram e alterne entre elas no app. Regras, instruções e perfil de voz são de cada conta separadamente, então uma segunda marca não herda o tom da primeira. Ainda não existe login de equipe com várias pessoas: hoje o Recadly é feito para quem de fato responde os DMs.',
+        'Dá — conecte várias contas do Instagram e alterne entre elas no app. Regras, instruções e perfil de voz são de cada conta separadamente, então uma segunda marca não herda o tom da primeira. E mais de uma pessoa pode dividir a mesma conta: pela conta onde o Instagram foi conectado você manda um código de convite, a pessoa entra com a Apple e digita o código. Por enquanto todo mundo numa conta tem acesso completo.',
       'faq8.q': 'E o Android?',
       'faq8.a':
         'Primeiro iOS, Android depois. Entre na lista e a gente te avisa quando o beta de Android abrir.',
@@ -917,6 +919,7 @@
       'privacy.p.what.intro': 'Quando você conecta uma conta profissional do Instagram e à medida que usa a Recadly, processamos:',
       'privacy.p.what.account': '<strong>Informações da conta do Instagram</strong> — o ID da conta, nome de usuário e dados básicos do perfil fornecidos pelo Instagram.',
       'privacy.p.what.token': '<strong>Tokens de acesso</strong> — um token seguro emitido pelo Instagram que permite à Recadly agir em nome da conta conectada.',
+      'privacy.p.what.identity': '<strong>Identidade de acesso</strong> — quando você entra com a Apple, o identificador de usuário que a Apple nos dá para o Recadly, mais o nome e o e-mail que você escolher compartilhar (inclusive o endereço de redirecionamento privado da Apple). Usado só para saber quem é você entre dispositivos e a quais contas conectadas você pode entrar.',
       'privacy.p.what.dm': '<strong>Conteúdo de mensagens diretas e comentários</strong> — o texto e os metadados de mensagens diretas e comentários de posts/reels enviados de e para a conta conectada, incluindo mensagens das pessoas que contatam essa conta.',
       'privacy.p.what.rules': '<strong>Regras de automação</strong> — regras de palavras-chave e tópicos que o usuário cria.',
       'privacy.p.what.drafts': '<strong>Rascunhos de respostas</strong> — rascunhos gerados por IA aguardando aprovação do usuário.',
@@ -944,7 +947,7 @@
       'privacy.h.rights': '10. Seus direitos',
       'privacy.p.rights': 'Conforme o RGPD/LGPD, você tem direito a acessar, corrigir, exportar e excluir seus dados pessoais, e a opor-se ou restringir seu tratamento. Para exercer esses direitos, contate <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>. Você também pode apresentar reclamação à autoridade de proteção de dados aplicável.',
       'privacy.h.deletion': '11. Exclusão de dados',
-      'privacy.p.deletion': 'Você pode desconectar sua conta do Instagram na Recadly a qualquer momento, o que revoga o acesso da Recadly e exclui o token de acesso armazenado. Para solicitar a exclusão completa de todos os dados armazenados, consulte <a href="data-deletion.html">recadly.com/data-deletion</a> ou escreva para <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.',
+      'privacy.p.deletion': 'Você pode desconectar sua conta do Instagram na Recadly a qualquer momento, o que revoga o acesso da Recadly e exclui o token de acesso armazenado. Você também pode excluir sua conta de usuário da Recadly nas configurações de Conta: isso apaga sua identidade de acesso, e qualquer conta do Instagram em que você fosse a única pessoa é desconectada e excluída junto. Para solicitar a exclusão completa de todos os dados armazenados, consulte <a href="data-deletion.html">recadly.com/data-deletion</a> ou escreva para <a href="mailto:privacy@recadly.com">privacy@recadly.com</a>.',
       'privacy.h.security': '12. Segurança',
       'privacy.p.security': 'Os tokens de acesso e os dados das mensagens são armazenados no nosso banco de dados hospedado na UE, com acesso restrito. O acesso aos sistemas de backend é limitado a operadores autorizados.',
       'privacy.h.children': '13. Menores',
