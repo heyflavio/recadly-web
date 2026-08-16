@@ -15,7 +15,7 @@
     en: {
       'meta.title': 'Recadly — never leave a customer on read again',
       'meta.description':
-        'You tell Recadly which topics matter. It drafts the reply in your voice for any matching Instagram DM or comment, ready for your approval.',
+        'You tell Recadly which topics matter. It drafts the reply in your voice — written or as a voice note — for any matching Instagram DM or comment, ready for your approval.',
 
       'nav.features': 'Features',
       'nav.how': 'How it works',
@@ -29,7 +29,7 @@
       'hero.eyebrow': 'Now in private beta',
       'hero.h1': 'Never leave a customer <em>on read</em> again.',
       'hero.lede':
-        'You tell Recadly which topics matter. It drafts the reply in your own written voice for any matching Instagram DM or comment. Approve each one, or let trusted topics handle themselves. Nothing goes out that you didn’t allow.',
+        'You tell Recadly which topics matter. It drafts the reply in your written voice — or records it in your cloned voice — for any matching Instagram DM or comment. Approve each one, or let trusted topics handle themselves. Nothing goes out that you didn’t allow.',
       'hero.placeholder': 'you@brand.studio',
       'hero.cta': 'Join the waitlist',
       'hero.cta_done': 'You’re on the list ✨',
@@ -55,9 +55,9 @@
       'feature3.title': 'Approvals queue',
       'feature3.body':
         'Every draft in one place, grouped by rule. Generate a whole section at once, send all, or clear it and start over. Coffee-length work.',
-      'feature4.title': 'Catch up in seconds',
+      'feature4.title': 'Voice notes in your voice',
       'feature4.body':
-        'Been away from a long thread? Recadly hands you a card summarising where it got to — and keeps a rolling memory of each chat, so its drafts remember too.',
+        'Clone your voice once. Recadly can answer with a real audio note — the format people actually open — or send one you pre-recorded.',
       'feature5.title': 'Follow-through',
       'feature5.body':
         'The chats that go quiet are the ones that cost you. Recadly picks the thread back up, keeps the thread of the conversation, and stops the moment it closes.',
@@ -76,7 +76,7 @@
       'funnel2.kicker': '02 · Answers',
       'funnel2.title': 'It replies the way you would',
       'funnel2.body':
-        'Drafted from your own past messages and your written instructions, so it lands in your tone. Waiting for your tap, or sent on its own — your call, per topic.',
+        'Text or a voice note in your cloned voice, drafted from your own past messages and your written instructions. Waiting for your tap, or sent on its own — your call, per topic.',
       'funnel2.tag': 'Your voice',
       'funnel3.kicker': '03 · Follows up',
       'funnel3.title': 'It doesn’t let them go cold',
@@ -102,9 +102,6 @@
       'point3.body':
         'One tap drops the draft into the field. Edit a single word, change the emoji, send when you mean it. Nothing goes out behind your back.',
 
-      'voice.feature_title': 'Voice notes in your voice',
-      'voice.feature_body':
-        'Clone your voice once. Recadly can answer with a real audio note — the format people actually open — or send one you pre-recorded.',
       'voice.eyebrow': 'Your actual voice',
       'voice.title': 'The reply they open first<br/>is the one they can hear.',
       'voice.lede':
@@ -353,7 +350,7 @@
     es: {
       'meta.title': 'Recadly — no vuelvas a dejar a un cliente en visto',
       'meta.description':
-        'Tú le dices a Recadly qué temas te importan. Redacta la respuesta en tu voz para cada DM o comentario de Instagram que coincida, lista para tu aprobación.',
+        'Tú le dices a Recadly qué temas te importan. Redacta la respuesta en tu voz — escrita o como nota de audio — para cada DM o comentario de Instagram que coincida, lista para tu aprobación.',
 
       'nav.features': 'Funciones',
       'nav.how': 'Cómo funciona',
@@ -367,7 +364,7 @@
       'hero.eyebrow': 'Ahora en beta privada',
       'hero.h1': 'No vuelvas a dejar a un cliente <em>en visto</em>.',
       'hero.lede':
-        'Tú le dices a Recadly qué temas te importan. Redacta la respuesta con tu forma de escribir para cada DM o comentario de Instagram que coincida. Apruebas cada una, o dejas que ciertos temas se respondan solos. No sale nada que no hayas permitido.',
+        'Tú le dices a Recadly qué temas te importan. Redacta la respuesta con tu forma de escribir — o la graba con tu voz clonada — para cada DM o comentario de Instagram que coincida. Apruebas cada una, o dejas que ciertos temas se respondan solos. No sale nada que no hayas permitido.',
       'hero.placeholder': 'tu@marca.studio',
       'hero.cta': 'Únete a la lista',
       'hero.cta_done': 'Ya estás en la lista ✨',
@@ -393,9 +390,9 @@
       'feature3.title': 'Cola de aprobación',
       'feature3.body':
         'Todos los borradores en un sitio, agrupados por regla. Genera una sección entera de golpe, envíalo todo, o bórralo y empieza de nuevo. Trabajo de un café.',
-      'feature4.title': 'Ponte al día en segundos',
+      'feature4.title': 'Notas de voz con tu voz',
       'feature4.body':
-        '¿Vuelves a una conversación larga? Recadly te da una tarjeta con el resumen de por dónde iba — y guarda una memoria continua de cada chat, así sus borradores también se acuerdan.',
+        'Clona tu voz una vez. Recadly puede responder con una nota de audio de verdad — el formato que la gente sí abre — o enviar una que grabaste antes.',
       'feature5.title': 'Seguimiento',
       'feature5.body':
         'Las conversaciones que se quedan a medias son las que te cuestan dinero. Recadly las retoma, recordando lo que ya se dijo, y para en cuanto se cierran.',
@@ -414,7 +411,7 @@
       'funnel2.kicker': '02 · Responde',
       'funnel2.title': 'Contesta como contestarías tú',
       'funnel2.body':
-        'Redactado a partir de tus propios mensajes y de tus instrucciones, para que suene a ti. Esperando tu toque, o enviado solo — tú decides, tema por tema.',
+        'Texto o nota de voz con tu voz clonada, redactado a partir de tus propios mensajes y de tus instrucciones. Esperando tu toque, o enviado solo — tú decides, tema por tema.',
       'funnel2.tag': 'Tu voz',
       'funnel3.kicker': '03 · Insiste',
       'funnel3.title': 'No deja que se enfríen',
@@ -440,9 +437,6 @@
       'point3.body':
         'Un toque coloca el borrador en el campo. Cambia una palabra, ajusta el emoji, envía cuando estés segura. Nada sale a tus espaldas.',
 
-      'voice.feature_title': 'Notas de voz con tu voz',
-      'voice.feature_body':
-        'Clona tu voz una vez. Recadly puede responder con una nota de audio de verdad — el formato que la gente sí abre — o enviar una que grabaste antes.',
       'voice.eyebrow': 'Tu voz de verdad',
       'voice.title': 'La respuesta que abren primero<br/>es la que pueden escuchar.',
       'voice.lede':
@@ -691,7 +685,7 @@
     pt: {
       'meta.title': 'Recadly — nunca mais deixe um cliente no vácuo',
       'meta.description':
-        'Você diz ao Recadly quais assuntos importam. Ele escreve a resposta na sua voz para cada DM ou comentário do Instagram que combinar, pronta para você aprovar.',
+        'Você diz ao Recadly quais assuntos importam. Ele escreve a resposta na sua voz — em texto ou como áudio — para cada DM ou comentário do Instagram que combinar, pronta para você aprovar.',
 
       'nav.features': 'Recursos',
       'nav.how': 'Como funciona',
@@ -705,7 +699,7 @@
       'hero.eyebrow': 'Agora em beta privado',
       'hero.h1': 'Nunca mais deixe um cliente <em>no vácuo</em>.',
       'hero.lede':
-        'Você diz ao Recadly quais assuntos importam. Ele escreve a resposta do seu jeito para cada DM ou comentário do Instagram que combinar. Você aprova uma a uma, ou deixa os assuntos de confiança se resolverem sozinhos. Nada sai sem você ter permitido.',
+        'Você diz ao Recadly quais assuntos importam. Ele escreve a resposta do seu jeito — ou grava com a sua voz clonada — para cada DM ou comentário do Instagram que combinar. Você aprova uma a uma, ou deixa os assuntos de confiança se resolverem sozinhos. Nada sai sem você ter permitido.',
       'hero.placeholder': 'voce@marca.studio',
       'hero.cta': 'Entrar na lista',
       'hero.cta_done': 'Você está na lista ✨',
@@ -731,9 +725,9 @@
       'feature3.title': 'Fila de aprovação',
       'feature3.body':
         'Todos os rascunhos num lugar só, agrupados por regra. Gere uma seção inteira de uma vez, envie tudo, ou limpe e comece de novo. Trabalho de um café.',
-      'feature4.title': 'Se atualize em segundos',
+      'feature4.title': 'Áudios com a sua voz',
       'feature4.body':
-        'Voltou para uma conversa longa? O Recadly te dá um card com o resumo de onde ela parou — e guarda uma memória contínua de cada chat, então os rascunhos também lembram.',
+        'Clone sua voz uma vez. O Recadly pode responder com um áudio de verdade — o formato que as pessoas realmente abrem — ou mandar um que você gravou antes.',
       'feature5.title': 'Follow-up que acontece',
       'feature5.body':
         'As conversas que esfriam são as que custam dinheiro. O Recadly retoma o assunto, lembrando do que já foi dito, e para no instante em que a conversa fecha.',
@@ -752,7 +746,7 @@
       'funnel2.kicker': '02 · Responde',
       'funnel2.title': 'Responde do jeito que você responderia',
       'funnel2.body':
-        'Escrito a partir das suas próprias mensagens e das suas instruções, para soar como você. Esperando o seu toque, ou enviado sozinho — você escolhe, assunto por assunto.',
+        'Texto ou áudio com a sua voz clonada, escrito a partir das suas próprias mensagens e das suas instruções. Esperando o seu toque, ou enviado sozinho — você escolhe, assunto por assunto.',
       'funnel2.tag': 'Sua voz',
       'funnel3.kicker': '03 · Insiste',
       'funnel3.title': 'Não deixa esfriar',
@@ -778,9 +772,6 @@
       'point3.body':
         'Um toque coloca o rascunho no campo. Mude uma palavra, troque o emoji, envie quando quiser. Nada sai pelas suas costas.',
 
-      'voice.feature_title': 'Áudios com a sua voz',
-      'voice.feature_body':
-        'Clone sua voz uma vez. O Recadly pode responder com um áudio de verdade — o formato que as pessoas realmente abrem — ou mandar um que você gravou antes.',
       'voice.eyebrow': 'A sua voz mesmo',
       'voice.title': 'A resposta que abrem primeiro<br/>é a que dá para ouvir.',
       'voice.lede':
