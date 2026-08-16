@@ -196,7 +196,7 @@
         'Free during the private beta. When we start charging we’ll publish one clear price before anyone is billed — no hidden message tiers, no surprise overage.',
       'faq7.q': 'Can I run more than one account?',
       'faq7.a':
-        'Yes — connect several Instagram accounts and switch between them in the app. Rules, instructions and the voice profile belong to each account separately, so a second brand doesn’t inherit the first one’s tone. More than one person can share an account too: send a teammate an invite code from the account where Instagram was connected, they sign in with Apple and enter it. Everyone on an account has full access for now.',
+        'Yes — connect several Instagram accounts and switch between them in the app. Rules, instructions and the voice profile belong to each account separately, so a second brand doesn’t inherit the first one’s tone. More than one person can share an account too: send a teammate an invite code from the account where Instagram was connected, they sign in with Apple and enter it. You choose what the code grants — admin (everything), setter (works the drafts and the funnel) or closer (replies in the inbox).',
       'faq8.q': 'What about Android?',
       'faq8.a':
         'iOS first, Android after. Add yourself to the waitlist and we’ll email you when the Android beta opens.',
@@ -532,7 +532,7 @@
         'Gratis durante la beta privada. Cuando empecemos a cobrar publicaremos un precio claro antes de facturarle nada a nadie — sin niveles ocultos de volumen ni cargos sorpresa.',
       'faq7.q': '¿Puedo llevar más de una cuenta?',
       'faq7.a':
-        'Sí — conecta varias cuentas de Instagram y cambia entre ellas en la app. Las reglas, las instrucciones y el perfil de voz son de cada cuenta por separado, así que una segunda marca no hereda el tono de la primera. Y varias personas pueden compartir una cuenta: desde la cuenta donde conectaste Instagram le mandas un código de invitación a tu compañera, ella inicia sesión con Apple y lo introduce. Por ahora todas las personas de una cuenta tienen acceso completo.',
+        'Sí — conecta varias cuentas de Instagram y cambia entre ellas en la app. Las reglas, las instrucciones y el perfil de voz son de cada cuenta por separado, así que una segunda marca no hereda el tono de la primera. Y varias personas pueden compartir una cuenta: desde la cuenta donde conectaste Instagram le mandas un código de invitación a tu compañera, ella inicia sesión con Apple y lo introduce. Tú eliges qué permite ese código: admin (todo), setter (trabaja los borradores y el embudo) o closer (responde en la bandeja).',
       'faq8.q': '¿Y Android?',
       'faq8.a':
         'Primero iOS, Android después. Apúntate a la lista y te avisaremos cuando se abra el beta de Android.',
@@ -868,7 +868,7 @@
         'Grátis durante o beta privado. Quando a gente começar a cobrar, vai publicar um preço claro antes de faturar de alguém — sem faixas escondidas de volume, sem cobrança surpresa.',
       'faq7.q': 'Dá para usar mais de uma conta?',
       'faq7.a':
-        'Dá — conecte várias contas do Instagram e alterne entre elas no app. Regras, instruções e perfil de voz são de cada conta separadamente, então uma segunda marca não herda o tom da primeira. E mais de uma pessoa pode dividir a mesma conta: pela conta onde o Instagram foi conectado você manda um código de convite, a pessoa entra com a Apple e digita o código. Por enquanto todo mundo numa conta tem acesso completo.',
+        'Dá — conecte várias contas do Instagram e alterne entre elas no app. Regras, instruções e perfil de voz são de cada conta separadamente, então uma segunda marca não herda o tom da primeira. E mais de uma pessoa pode dividir a mesma conta: pela conta onde o Instagram foi conectado você manda um código de convite, a pessoa entra com a Apple e digita o código. Você escolhe o que o código libera: admin (tudo), setter (cuida dos rascunhos e do funil) ou closer (responde na caixa de entrada).',
       'faq8.q': 'E o Android?',
       'faq8.a':
         'Primeiro iOS, Android depois. Entre na lista e a gente te avisa quando o beta de Android abrir.',
