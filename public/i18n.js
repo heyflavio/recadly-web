@@ -108,7 +108,7 @@
         'Record about a minute of yourself once. From then on Recadly can answer in audio — your accent, your pace, your way of trailing off at the end of a sentence.',
       'voice.caption': 'Sent as a real Instagram audio message — not a link, not a file.',
       'voice.p1':
-        '<strong>Two cloning services to pick from.</strong> If one doesn’t sound like you, switch to the other from the app — same screen, no re-recording setup.',
+        '<strong>Answers you never recorded.</strong> Recadly drafts the reply, then speaks it in your cloned voice — so a question that lands while you’re out can still get an audio answer.',
       'voice.p2':
         '<strong>Or keep a library of real ones.</strong> Record the answers you give every week once, and drop the right one into a thread in a tap. Nothing synthetic involved.',
       'voice.p3':
@@ -187,7 +187,7 @@
         'Only the DMs and post/reel comments that match the rules you set up. Recadly checks each incoming message against your topics — anything that doesn’t match isn’t drafted or stored. We never read your feed, your stories, your followers, or any other part of your account.',
       'faq4.q': 'Is the voice note really my voice?',
       'faq4.a':
-        'It’s a clone built from a recording of you, so yes — your accent and your pace, close enough that regulars don’t notice. Two cloning services are available and you can switch between them if one doesn’t sound right. If you’d rather not use a clone at all, keep a library of notes you recorded yourself and send those instead.',
+        'It’s a clone built from a recording of you, so yes — your accent and your pace, close enough that regulars don’t notice. You hear every one before it goes, so nothing leaves in a version you wouldn’t have sent. And if you’d rather not use a clone at all, keep a library of notes you recorded yourself and send those instead.',
       'faq5.q': 'What if it gets something wrong?',
       'faq5.a':
         'Start with everything on suggest-only — nothing leaves without your tap — and switch a topic to auto-reply once you’ve read a few dozen of its drafts and trust them. Write what it must never say into your instructions; Recadly reads that back to you and flags where it contradicts itself. And a queued reply can still be cancelled before it goes.',
@@ -443,7 +443,7 @@
         'Grábate un minuto una sola vez. A partir de ahí Recadly puede responder en audio — tu acento, tu ritmo, tu forma de dejar la frase a medias.',
       'voice.caption': 'Se envía como una nota de audio real de Instagram — no un enlace, no un archivo.',
       'voice.p1':
-        '<strong>Dos servicios de clonado a elegir.</strong> Si uno no suena a ti, cambias al otro desde la app — misma pantalla, sin volver a montar nada.',
+        '<strong>Respuestas que nunca grabaste.</strong> Recadly redacta la respuesta y luego la dice con tu voz clonada — así una pregunta que llega mientras no estás también puede tener audio.',
       'voice.p2':
         '<strong>O guarda una biblioteca de notas reales.</strong> Graba una vez las respuestas que das cada semana y suelta la que toca en un toque. Nada sintético.',
       'voice.p3':
@@ -522,7 +522,7 @@
         'Solo los DMs y comentarios en posts y reels que coincidan con las reglas que configures. Recadly compara cada mensaje entrante con tus temas — lo que no coincide, no se redacta ni se guarda. Nunca leemos tu feed, tus historias, tus seguidores ni ninguna otra parte de tu cuenta.',
       'faq4.q': '¿La nota de voz es de verdad mi voz?',
       'faq4.a':
-        'Es un clon hecho a partir de una grabación tuya, así que sí — tu acento y tu ritmo, lo bastante cerca como para que quien te sigue no lo note. Hay dos servicios de clonado y puedes cambiar de uno a otro si alguno no te suena bien. Y si prefieres no usar clon, guarda una biblioteca de notas grabadas por ti y envía esas.',
+        'Es un clon hecho a partir de una grabación tuya, así que sí — tu acento y tu ritmo, lo bastante cerca como para que quien te sigue no lo note. Escuchas cada nota antes de que salga, así que nada se va en una versión que no habrías enviado. Y si prefieres no usar clon, guarda una biblioteca de notas grabadas por ti y envía esas.',
       'faq5.q': '¿Y si se equivoca en algo?',
       'faq5.a':
         'Empieza con todo en modo sugerencia — no sale nada sin tu toque — y pasa un tema a respuesta automática cuando hayas leído unas cuantas decenas de sus borradores y te fíes. Escribe en tus instrucciones lo que no debe decir jamás; Recadly te las lee de vuelta y te marca dónde se contradicen. Y una respuesta en cola todavía se puede cancelar antes de que salga.',
@@ -778,7 +778,7 @@
         'Grave cerca de um minuto de você uma única vez. A partir daí o Recadly responde em áudio — seu sotaque, seu ritmo, seu jeito de deixar a frase morrendo no fim.',
       'voice.caption': 'Enviado como áudio de verdade do Instagram — não é link, não é arquivo.',
       'voice.p1':
-        '<strong>Dois serviços de clonagem à escolha.</strong> Se um não soar como você, troque pelo outro dentro do app — mesma tela, sem refazer nada.',
+        '<strong>Respostas que você nunca gravou.</strong> O Recadly escreve a resposta e depois fala com a sua voz clonada — então uma pergunta que chega enquanto você está fora também pode ter áudio.',
       'voice.p2':
         '<strong>Ou monte uma biblioteca de áudios reais.</strong> Grave uma vez as respostas que você dá toda semana e solte a certa na conversa com um toque. Nada sintético.',
       'voice.p3':
@@ -857,7 +857,7 @@
         'Só os DMs e comentários em posts e reels que combinem com as regras que você configurar. O Recadly compara cada mensagem recebida com os seus assuntos — o que não combina não é escrito nem guardado. A gente nunca lê o seu feed, seus stories, seus seguidores nem qualquer outra parte da sua conta.',
       'faq4.q': 'O áudio é mesmo a minha voz?',
       'faq4.a':
-        'É um clone feito a partir de uma gravação sua, então sim — seu sotaque e seu ritmo, perto o bastante para quem te acompanha não notar. Há dois serviços de clonagem e você pode trocar de um para o outro se algum não soar bem. E se preferir não usar clone, monte uma biblioteca de áudios gravados por você e mande esses.',
+        'É um clone feito a partir de uma gravação sua, então sim — seu sotaque e seu ritmo, perto o bastante para quem te acompanha não notar. Você ouve cada áudio antes de sair, então nada vai numa versão que você não teria mandado. E se preferir não usar clone, monte uma biblioteca de áudios gravados por você e mande esses.',
       'faq5.q': 'E se ele errar alguma coisa?',
       'faq5.a':
         'Comece com tudo em modo sugestão — nada sai sem o seu toque — e passe um assunto para resposta automática depois de ler algumas dezenas de rascunhos dele e confiar. Escreva nas suas instruções o que ele nunca deve dizer; o Recadly lê isso de volta para você e aponta onde o texto se contradiz. E uma resposta na fila ainda pode ser cancelada antes de sair.',
