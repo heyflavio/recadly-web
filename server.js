@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
   // Only advertise HSTS when the proxy in front of us terminated TLS.
   if (req.headers['x-forwarded-proto'] === 'https') {
-    res.setHeader('Strict-Transport-Security', 'max-age=15552000');
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
   }
 
   const notFound = () => sendFile(res, 404, path.join(PUBLIC_DIR, '404.html'));

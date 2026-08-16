@@ -19,9 +19,25 @@
   // window.tr() / RecadlyI18n globals are always available here.
   var i18n = window.tr;
 
+  // Honeypot: a field a human never sees and never fills. Bots that walk the
+  // DOM and fill every input give themselves away by putting something in it.
+  function addHoneypot(form) {
+    var hp = document.createElement('input');
+    hp.type = 'text';
+    hp.name = 'website';
+    hp.tabIndex = -1;
+    hp.autocomplete = 'off';
+    hp.setAttribute('aria-hidden', 'true');
+    hp.style.cssText =
+      'position:absolute;left:-9999px;width:1px;height:1px;opacity:0;';
+    form.appendChild(hp);
+    return hp;
+  }
+
   function attach(form) {
     if (form.__waitlistWired) return;
     form.__waitlistWired = true;
+    var honeypot = addHoneypot(form);
 
     var input = form.querySelector('input[type="email"]');
     var button = form.querySelector('button[type="submit"]');
@@ -67,6 +83,7 @@
           email: email,
           source: source,
           locale: window.RecadlyI18n.currentLang(),
+          website: honeypot.value,
         }),
       })
         .then(function (res) {
