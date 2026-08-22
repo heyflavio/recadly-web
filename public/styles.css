@@ -670,6 +670,9 @@ footer {
   flex-wrap: wrap;
 }
 .footer-base a:hover { color: var(--ink); }
+/* Operating entity — its own full-width row under the copyright, so the
+   legal name reads as a statement rather than a third floating link. */
+.footer-entity { flex-basis: 100%; order: 3; font-size: 12px; opacity: .8; }
 
 @media (max-width: 820px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
